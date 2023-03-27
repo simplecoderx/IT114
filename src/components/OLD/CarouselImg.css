@@ -1,0 +1,19 @@
+.carousel-container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+  
+  .slick-dots li button:before {
+    color: black;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: gray;
+  }
+  

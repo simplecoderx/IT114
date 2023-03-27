@@ -1,19 +1,64 @@
-.carousel-container {
-    margin: 0 auto;
-    width: 80%;
-    max-width: 1200px;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before {
-    color: black;
-  }
-  
-  .slick-dots li button:before {
-    color: black;
-  }
-  
-  .slick-dots li.slick-active button:before {
-    color: gray;
-  }
-  
+.c-item {
+    height: 620px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.carousel-caption {
+    text-align: left;
+    padding-top: 5rem;
+}
+
+.btn {
+    margin-right: 2rem;
+}
+
+.smallTxt {
+    animation: smallTxt 1.5s ease 0s 1 normal forwards;
+}
+
+@keyframes smallTxt {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bannerTitle{
+    animation: bannerTitle 1.5s ease 0s 1 normal forwards;
+}
+@keyframes bannerTitle {
+	0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.bannerCaption{
+    animation: bannerCaption 1s ease 0s 1 normal forwards;
+}
+@keyframes bannerCaption {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
