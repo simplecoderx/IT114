@@ -60,3 +60,7 @@ a {
   margin: 5px auto;
   background-color: var(--primary-color);
 }
+
+.sectionNavCar{
+  margin-top: 5.6rem;
+}

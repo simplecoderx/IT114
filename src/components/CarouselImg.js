@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import image1 from './../components/images/1.jpg';
 import image2 from './../components/images/2.jpg';
 import image3 from './../components/images/3.jpg';
+// import 'bootstrap/dist/css/bootstrap.css';
 
 const CarouselImg = () => {
   return (

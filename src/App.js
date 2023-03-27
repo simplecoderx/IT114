@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* <div><CarouselImg/></div> */}
+      <div className='sectionNavCar'><CarouselImg/></div>
       <Hero />
       <About />
       <Testimonials />
