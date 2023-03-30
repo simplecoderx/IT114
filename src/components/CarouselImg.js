@@ -4,7 +4,7 @@ import image1 from "./../components/images/1.jpg";
 
 const CarouselImg = () => {
   return (
-    <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel">
+    <div id="hero-carousel" className="carousel slide carousel-space" data-bs-ride="carousel">
       <div className="carousel-indicators">
         <button
           type="button"

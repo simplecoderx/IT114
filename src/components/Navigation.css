@@ -1,0 +1,200 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #5bb462;
+    --primary-dark: #4f9c55;
+    --secondary-color: #ffea00;
+    --secondary-dark: #e3d002;
+    --overlay: rgba(0, 0, 0, .7);
+}
+
+.navigation {
+    margin-bottom: 0;
+    background-color: #4f96e8;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.navigation a:hover {
+    color: default;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.navigation a:after {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navigation a:after:hover {
+    width: 100%;
+}
+
+.navigation .nav-item {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.nav-item .active {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.navigation .nav-item a:hover {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+} */
+
+.navigation {
+    margin-bottom: 0;
+    background-color: #4f96e8;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+.navLinks .nav-item {
+    margin-bottom: 0;
+    background-color: #4f96e8;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;    
+}
+
+.navLinks .nav-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navLinks .nav-item:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* .navtoggle {
+    background-color: #fff; 
+    border-color: #fff; 
+    color: #4287f5; 
+} */
+
+.navMenu {
+    padding-top: 2px;
+    width: 100%;
+    background-color: #4f96e8;
+}
+
+.navMenu a {
+    margin: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+ .navMenu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navMenu a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.logo{
+    width: 180px;
+    height: 30px;
+    /* padding-bottom:1rem; */
+}
+
+.getStartedBtn{
+    background-color:#4f96e8;
+    color:white;
+    border-radius: 12px;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.getStartedBtn:hover{
+    background-color:white;
+    color:#4f96e8;
+    box-shadow: #fff;
+}
+
+@media (max-width: 991.98px) {
+    body{
+        background-color: #4f96e8;
+    }
+    .navMenu {
+      background-color: #4f96e8;
+      padding: 20px;
+    }
+    .navLinks {
+      flex-direction: column;
+      text-align: left;
+    }
+    .navLinks .nav-item {
+      margin-bottom: 10px;
+    }
+    .getStartedBtn {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+    .toggleTitle{
+        color: white;
+    }
+  }
+  

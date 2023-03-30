@@ -1,5 +1,5 @@
 .c-item {
-    height: 620px;
+    height: 550px;
 }
 
 .c-img {
@@ -11,6 +11,10 @@
 .carousel-caption {
     text-align: left;
     padding-top: 5rem;
+}
+
+.carousel-space{
+    margin-top:0;
 }
 
 .btn {

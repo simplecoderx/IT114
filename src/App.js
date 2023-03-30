@@ -13,6 +13,10 @@ import React from 'react'
 // import CarouselImg from './components/CarouselImg'
 import Navbar from './components/Navbar'
 import CarouselImg from './components/CarouselImg';
+import Navi from './components/Navi';
+import Cards from './components/TwoDivs';
+import TwoDivs from './components/TwoDivs';
+import Plans from './components/Plans';
 
 function App() {
   return (
@@ -29,9 +33,12 @@ function App() {
       <FAQ/>
       <Contact/>
       <Footer /> */}
-      <Navbar/>
-      <div><CarouselImg/></div>
-      
+      {/* <Navbar/> */}
+      <Navi/>
+      <CarouselImg/>
+      {/* <TwoDivs/> */}
+      {/* <Cards/> */}
+      <Plans/>
     </div>
   );
 }
