@@ -1,5 +1,9 @@
+.carousel-inner{
+    padding-top: -20rem;
+}
 .c-item {
     height: 550px;
+    padding-top: -100rem;
 }
 
 .c-img {
@@ -19,10 +23,92 @@
 
 .btn {
     margin-right: 2rem;
+    background-color: orange;
+    color: white;
 }
+.btn:hover {
+    background-color: transparent;
+    color: orange;
+    border-color: orange;
+    outline: orange;
+}
+
+.contactUsBtn{
+    margin-right: 2rem;
+    background-color: transparent;
+    color: skyblue;
+}
+
+.contactUsBtn:hover{
+    background-color: skyblue;
+    color: white;
+    border-color: skyblue;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  
 
 .smallTxt {
     animation: smallTxt 1.5s ease 0s 1 normal forwards;
+    padding-top: -20rem;
 }
 
 @keyframes smallTxt {
@@ -66,3 +152,17 @@
 		transform: translateX(0);
 	}
 }
+
+.carousel-indicators button {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+    border-radius: 50%;
+  }
+  
+  .carousel-indicators button:not(:first-child) {
+    margin-left: 1rem;
+  }
+  
+  .carousel-indicators .active {
+    background-color:#4f96e8 ;
+  }

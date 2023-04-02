@@ -2,7 +2,7 @@ import React from 'react'
 // import Navbar from './components/Navbar'
 // import Hero from './components/Hero'
 // import About from './components/About'
-// import Testimonials from './components/Testimonials'
+import Testimonials from './components/Testimonials'
 // import Demo from './components/Demo'
 // import Footer from './components/Footer'
 // import Services from './components/Services'
@@ -17,6 +17,8 @@ import Navi from './components/Navi';
 import Cards from './components/TwoDivs';
 import TwoDivs from './components/TwoDivs';
 import Plans from './components/Plans';
+import BarTxt from './components/BarTxt';
+import Divider from './components/Divider';
 
 function App() {
   return (
@@ -36,9 +38,13 @@ function App() {
       {/* <Navbar/> */}
       <Navi/>
       <CarouselImg/>
-      {/* <TwoDivs/> */}
+      <TwoDivs/>
+      {/* <div><BarTxt/></div> */}
+     
       {/* <Cards/> */}
+      <Divider/>
       <Plans/>
+      {/* <Testimonials/> */}
     </div>
   );
 }

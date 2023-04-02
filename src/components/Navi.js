@@ -32,7 +32,7 @@ function Navi() {
                 <Nav.Link className='nav-item' href="#action1" spy={true} smooth={true} offset={-150} duration={500}>SERVICES</Nav.Link>
                 <Nav.Link className='nav-item' href="#action2" spy={true} smooth={true} offset={-150} duration={500}>PORTFOLIO</Nav.Link>
                 <Nav.Link className='nav-item' href="#plans" spy={true} smooth={true} offset={-150} duration={500}>PRICING PLANS</Nav.Link>
-                <Nav.Link className='nav-item' href="#action4" spy={true} smooth={true} offset={-150} duration={500}>TESTIMONIAL</Nav.Link>
+                <Nav.Link className='nav-item' href="#testimonials" spy={true} smooth={true} offset={-150} duration={500}>TESTIMONIAL</Nav.Link>
                 <Nav.Link className='nav-item' href="#action5" spy={true} smooth={true} offset={-150} duration={500}>FAQ</Nav.Link>
                 <Nav.Link className='nav-item' href="#action6" spy={true} smooth={true} offset={-150} duration={500}>ABOUT US</Nav.Link>
                 <Nav.Link className='nav-item' href="#action7" spy={true} smooth={true} offset={-150} duration={500}>CONTACT US</Nav.Link>

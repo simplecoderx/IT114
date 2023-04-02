@@ -72,7 +72,7 @@ function Plans() {
             </Card.Footer>
           </Card>
         </Col>
-        <Col className="colcards">
+        <Col className="colcards slideInUp">
           <Card className="planCards">
             <Card.Body>
               <img className="logoplans" src={cleaningservice} alt="logoplans" />
@@ -149,11 +149,11 @@ function Plans() {
                       <span class="checkmark">&#10003;</span>
                     </li>
                     <li>
-                      <span class="item-text">oven and fridge (if requested)</span>
+                      <span class="item-text">Oven and fridge (if requested)</span>
                       <span class="checkmark">&#10003;</span>
                     </li>
                     <li>
-                      <span class="item-text">olding laundry and changing bed linens (if requested)</span>
+                      <span class="item-text">Folding laundry and changing bed linens (if requested)</span>
                       <span class="checkmark">&#10003;</span>
                     </li>
                   </ul>

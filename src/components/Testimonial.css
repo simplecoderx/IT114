@@ -1,0 +1,186 @@
+/* .testimonial-container{
+    margin: 2rem;
+    padding-bottom: 2rem;
+    background-color: green;
+    width: 50%;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgb(38, 57, 112);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    height: 25rem;
+    width: 300px;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
+  .testimonial-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonial-title {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #888;
+  }
+   */
+   * {
+    box-sizing: border-box;
+  }
+  .row{
+    height: 550px;
+  }
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 60%;
+    /* padding: 10px; */
+    height: 800px; /* Should be removed. Only for demonstration */
+    padding: 2rem;
+    margin-top: 1rem;
+    border: 2px solid black;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .row .column1 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    height: 800px; /* Should be removed. Only for demonstration */
+    padding: 2rem;
+    margin-top: 1rem;
+    border: 2px solid black;
+  }
+  .row .column .carddiv1{
+    /* padding-top: 2rem; */
+  }
+  .row .column .carddiv{
+    padding-top: 2rem;
+  }
+  
+  
+   .testimonial-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: none;
+  }
+  
+  .testimonial-card {
+    background-color:  #4287f5;
+    border: 1px solid orange;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 50rem;
+  }
+  
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .testimonial-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    text-align: justify;
+    margin-top: 1px;
+    font-style: italic;
+    padding: 10px;
+    color: white;
+  }
+  
+  .testimonial-name {
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+  }
+
+  .testimonial-names{
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-bottom: 15rem; */
+  }
+  
+  .testimonial-title {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 0;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  /* .FiveStars {
+    color: #FFD700;
+    font-size: 24px;
+  } */
+
+  .star-ratings{
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: pink; */
+    margin-left: 2.5rem;
+    margin-top: -1rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .testimonial-container {
+      padding: 10px;
+    }
+  
+    .testimonial-card {
+      padding: 10px;
+    }
+  
+    .testimonial-image {
+      width: 75px;
+      height: 75px;
+    }
+  
+    .testimonial-text {
+      font-size: 16px;
+    }
+  
+    .testimonial-name {
+      font-size: 18px;
+    }
+  
+    .testimonial-title {
+      font-size: 14px;
+    }
+  }
+  

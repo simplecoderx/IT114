@@ -209,6 +209,7 @@ li {
 
 .checkmark {
     font-size: 1.2em;
+    color: orange;
 }
 
 .planbutton {
@@ -226,6 +227,7 @@ li {
 .planbutton:hover {
     background-color: skyblue;
     color: white;
+    border-color: skyblue;
 
 }
 
@@ -247,6 +249,37 @@ li {
 .card-link:hover {
     color: #0a58ca;
 }
+
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    @keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    } 
 
 @media (min-width: 576px) {
     .card-deck {

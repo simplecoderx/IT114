@@ -34,23 +34,23 @@ const CarouselImg = () => {
             className="d-block w-100 c-img"
             alt="Slide 1"
           />
-          <div className="carousel-caption top-0 mt-4 animated">
-            <p className="mt-5 fs-3 text-uppercase smallTxt">
-              Discover the hidden world
+          <div className="carousel-caption animated">
+            <p className=" text-uppercase fs-3 mt-5  smallTxt">
+              Cleaning
             </p>
-            <h1 className="display-1 fw-bolder text-capitalize bannerTitle">
-              The Aurora Tours
+            <h1 className="display-1 fw-bolder text-capitalize bannerCaption">
+            Introducing the Best Level of Cleaning Services
             </h1>
-            <h5 className="bannerCaption">sdadad</h5>
-            <button className="btn btn-primary px-4 py-2 fs-5 mt-5 carouselBtn">
-              Book a tour
+            <h5 className="text-focus-in">Ensuring the overall health and safety of individuals and the community.</h5>
+            <button className="btn px-4 py-2 fs-5 mt-5 carouselBtn">
+              Start Now
             </button>
             <button
-              className="btn btn-primary px-4 py-2 fs-5 mt-5"
+              className="btn btn-primary px-4 py-2 fs-5 mt-5 contactUsBtn"
               data-bs-toggle="modal"
               data-bs-target="#booking-modal"
             >
-              Book a tour
+              Contact Us
             </button>
           </div>
         </div>
@@ -60,25 +60,21 @@ const CarouselImg = () => {
             className="d-block w-100 c-img"
             alt="Slide 2"
           />
-          <div className="carousel-caption top-0 mt-4">
-            <p className="text-uppercase fs-3 mt-5 smallTxt">The season has arrived</p>
-            <p className="display-1 fw-bolder text-capitalize bannerTitle">
-              3 available tours
+          <div className="carousel-caption mt-4">
+            <p className="text-uppercase fs-3 mt-5 smallTxt">Sanitizing</p>
+            <p className="display-1 fw-bolder text-capitalize bannerCaption">
+            Providing You The Right Sanitizing Solutions You Need
             </p>
-            <h5 className="bannerCaption">sdadad</h5>
-            <button
-              className="btn btn-primary px-4 py-2 fs-5 mt-5"
-              data-bs-toggle="modal"
-              data-bs-target="#booking-modal"
-            >
-              Book a tour
+            <h5 className="text-focus-in">  Key component of maintaining overall cleanliness in the house through sanitizing were you can help keep your house looking and smelling clean.</h5>
+            <button className="btn px-4 py-2 fs-5 mt-5 carouselBtn">
+              Start Now
             </button>
             <button
-              className="btn btn-primary px-4 py-2 fs-5 mt-5"
+              className="btn btn-primary px-4 py-2 fs-5 mt-5 contactUsBtn"
               data-bs-toggle="modal"
               data-bs-target="#booking-modal"
             >
-              Book a tour
+              Contact Us
             </button>
           </div>
         </div>
@@ -88,25 +84,23 @@ const CarouselImg = () => {
             className="d-block w-100 c-img"
             alt="Slide 3"
           />
-          <div className="carousel-caption top-0 mt-4">
-            <p className="text-uppercase fs-3 mt-5 smallTxt">Destination activities</p>
-            <p className="display-1 fw-bolder text-capitalize bannerTitle">
-              Go glacier hiking
+          <div className="carousel-caption animated">
+            <p className=" text-uppercase fs-3 mt-5  smallTxt">
+              Polishing
             </p>
-            <h5 className="bannerCaption">sdadad</h5>
-            <button
-              className="btn btn-primary px-4 py-2 fs-5 mt-5"
-              data-bs-toggle="modal"
-              data-bs-target="#booking-modal"
-            >
-              Book a tour
+            <h1 className="display-1 fw-bolder text-capitalize bannerCaption">
+            Delivering Our Accurate Work Just In Time As You Wish!
+            </h1>
+            <h5 className="text-focus-in">Implementing efficient processes, using the right tools and cleaning methods, prioritizing tasks, and ensuring properly trained and supervised staff.</h5>
+            <button className="btn px-4 py-2 fs-5 mt-5 carouselBtn">
+              Start Now
             </button>
             <button
-              className="btn btn-primary px-4 py-2 fs-5 mt-5"
+              className="btn btn-primary px-4 py-2 fs-5 mt-5 contactUsBtn"
               data-bs-toggle="modal"
               data-bs-target="#booking-modal"
             >
-              Book a tour
+              Contact Us
             </button>
           </div>
         </div>
