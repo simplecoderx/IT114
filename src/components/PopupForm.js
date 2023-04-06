@@ -134,7 +134,9 @@ function PopupForm(props) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    chosenplan: "",
+    phone: "",
+    chosenplan: props.planName,
+    location: "",
     message: "",
   });
   const [formSubmitStatus, setFormSubmitStatus] = useState({
@@ -142,7 +144,7 @@ function PopupForm(props) {
     error: false,
     success: false,
   });
-
+  const [phoneError, setPhoneError] = useState(null);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -157,6 +159,12 @@ function PopupForm(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+     // Validate phone number before submitting
+     const phoneRegex = /^\d{11}$/; // Regex for 10-digit phone number
+     if (!phoneRegex.test(formData.phone)) {
+       setPhoneError('Please enter a valid 10-digit phone number');
+       return;
+     }
     setFormSubmitStatus({ submitting: true, error: false, success: false });
     try {
       await axios.post("https://formcarry.com/s/JqqxnckAco", formData, {
@@ -231,6 +239,19 @@ function PopupForm(props) {
                 required
               />
             </Form.Group>
+            <Form.Group className="mb-3 mt-0" controlId="phonenumber">
+              <Form.Label>Phone Number</Form.Label>
+              <Form.Control
+                type="tel"
+                placeholder="+63xxxxxxxxxx"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                isInvalid={!!phoneError}
+                required
+              />
+               <Form.Control.Feedback type="invalid">{phoneError}</Form.Control.Feedback>
+            </Form.Group>
             <Form.Group className="mb-3" controlId="chosenplan">
               <Form.Label>Chosen Plan</Form.Label>
               <Form.Control
@@ -239,6 +260,18 @@ function PopupForm(props) {
                 name="chosenplan"
                 value={formData.planName}
                 disabled
+              />
+              <input type="hidden" name="chosenplan" value={formData.chosenplan} />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="location">
+              <Form.Label>Location</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter your location"
+                name="location"
+                value={formData.location}
+                onChange={handleInputChange}
+                required
               />
             </Form.Group>
 
