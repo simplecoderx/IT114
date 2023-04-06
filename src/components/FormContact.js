@@ -154,6 +154,7 @@ function FormContact() {
           <Form.Control
             type="text"
             name="subject"
+            style={{ width:'39rem' }}
             placeholder="Enter the subject of your message"
             required
           />
