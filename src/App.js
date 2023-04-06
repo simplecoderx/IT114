@@ -9,7 +9,7 @@ import Testimonials from './components/Testimonials'
 // import Portfolio from './components/Portfolio'
 // import PricingPlans from './components/PricingPlans'
 // import FAQ from './components/FAQ'
-// import Contact from './components/Contact'
+import Contact from './components/Contact'
 // import CarouselImg from './components/CarouselImg'
 import Navbar from './components/Navbar'
 import CarouselImg from './components/CarouselImg';
@@ -19,6 +19,9 @@ import TwoDivs from './components/TwoDivs';
 import Plans from './components/Plans';
 import BarTxt from './components/BarTxt';
 import Divider from './components/Divider';
+import PopupForm from './components/PopupForm';
+import PricingPage from './components/PricingPage';
+import MyFormcarry from './components/MyFormcarry';
 
 function App() {
   return (
@@ -45,6 +48,10 @@ function App() {
       <Divider/>
       <Plans/>
       {/* <Testimonials/> */}
+      {/* <PopupForm/> */}
+      {/* <PricingPage/> */}
+      {/* <MyFormcarry/> */}
+      <Contact/>
     </div>
   );
 }

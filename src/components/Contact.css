@@ -1,41 +1,85 @@
-* {
-    box-sizing: border-box;
-  }
-  .row{
-    height: 550px;
-  }
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 60%;
-    /* padding: 10px; */
-    height: 800px; /* Should be removed. Only for demonstration */
-    padding: 2rem;
-    margin-top: 1rem;
-    border: 2px solid black;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .row .column1 {
-    float: left;
-    width: 40%;
-    padding: 10px;
-    height: 800px; /* Should be removed. Only for demonstration */
-    padding: 2rem;
-    margin-top: 1rem;
-    border: 2px solid black;
-  }
-  .row .column .carddiv1{
-    /* padding-top: 2rem; */
-  }
-  .row .column .carddiv{
-    padding-top: 2rem;
-  }
-  
-  
+.contact-div{
+  height: 800px;
+  /* background-color: bisque; */
+  padding: 5rem;
+  margin-top: 8rem;
+  display: flex;
+}
+.contact-div-left{
+  display: flex;
+  background-color: rgb(38, 57, 112);
+  height: 600px;
+  width: 40%;
+}
+.contact-info{
+  margin-top: 7rem;
+  margin-left: 3rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+.contact-info h1{
+  margin-bottom: 1px;
+  font-size: 24px;
+}
+.contact-info p{
+  margin-bottom: 5rem;
+  margin-left: 2.5rem;
+  color: lightblue;
+  margin-right: 2.5rem;
+}
+.location-icon {
+  padding-right: 20px;
+}
+.contact-div-right{
+  display: flex;
+  background-color: white;
+  height: 600px;
+  width: 50%;
+  margin: 2rem;
+}
+.contact-div-left-inner{
+  display: flex;
+  background-color: beige;
+  height: 20rem;
+  width: 60%;
+}
+.form div {
+  display: inline-block;
+  margin-right: 10px;
+}
+.KeepInTouch{
+  /* background-color: blue; */
+  height: 7rem;
+  margin: 5px;
+}
+.KeepInTouch h1{
+  font-size: 4rem;
+}
+.KeepInTouch span{
+  font-size: 4rem;
+}
+.KeepInTouch p{
+  color: black;
+  font-size: 18px;
+  font-weight: 2;
+}
+.form-contact{
+  /* background-color: green; */
+  width: 40rem;
+}
+.text-muted{
+  font-size: 12px;
+}
+.FormContactBtn{
+  border-radius: 3rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 30rem;
+  color: 2px solid white;
+  font-weight: bold;
+}

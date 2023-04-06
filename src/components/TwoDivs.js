@@ -1,8 +1,6 @@
 import React from "react";
 import "./TwoDivs.css";
-import Cards from "./Cards";
 import Testimonials from "./Testimonials";
-import BarTxt from "./BarTxt";
 
 function TwoDivs() {
   return (
