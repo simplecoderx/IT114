@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "./Plans.css";
+import './Plans.css';
 import { Button } from "react-bootstrap";
 import cleaningcart from "./images/cleaning-cart.png";
 import cleaningservice from "./images/cleaning-service.png";
@@ -57,11 +57,11 @@ function Plans() {
   };
 
   return (
-    <div className="plansDiv" id="plans">
+    <div className="plansDivider" id="plans">
       <div className="plans-container">
-        <h6 className="hr-lines"> Pricing Plans</h6>
+        <h6 className="lines"> Pricing Plans</h6>
         <h1 className="bordered-text">
-          Afforable <span className="non-bordered-text">Plans</span>
+          Affordable <span className="non-bordered-text">Plans</span>
         </h1>
         <div className="shortDescription">
           <h6>

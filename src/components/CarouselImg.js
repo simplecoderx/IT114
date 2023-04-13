@@ -39,9 +39,10 @@ const CarouselImg = () => {
               Cleaning
             </p>
             <h1 className="display-1 fw-bolder text-capitalize bannerCaption">
-            Introducing the Best Level of Cleaning Services
+            Introducing the Best Cleaning Services
             </h1>
             <h5 className="text-focus-in">Ensuring the overall health and safety of individuals and the community.</h5>
+            <div class="btn-container">
             <button className="btn px-4 py-2 fs-5 mt-5 carouselBtn">
               Start Now
             </button>
@@ -53,6 +54,7 @@ const CarouselImg = () => {
               Contact Us
             </button>
           </div>
+          </div>
         </div>
         <div className="carousel-item c-item">
           <img
@@ -60,12 +62,13 @@ const CarouselImg = () => {
             className="d-block w-100 c-img"
             alt="Slide 2"
           />
-          <div className="carousel-caption mt-4">
+          <div className="carousel-caption animated">
             <p className="text-uppercase fs-3 mt-5 smallTxt">Sanitizing</p>
             <p className="display-1 fw-bolder text-capitalize bannerCaption">
-            Providing You The Right Sanitizing Solutions You Need
+            Providing You The Right Sanitizing Solutions
             </p>
-            <h5 className="text-focus-in">  Key component of maintaining overall cleanliness in the house through sanitizing were you can help keep your house looking and smelling clean.</h5>
+            <h5 className="text-focus-in">Cleaning through sanitizing were you can help keep your house looking and smelling clean.</h5>
+            <div class="btn-container">
             <button className="btn px-4 py-2 fs-5 mt-5 carouselBtn">
               Start Now
             </button>
@@ -76,6 +79,7 @@ const CarouselImg = () => {
             >
               Contact Us
             </button>
+          </div>
           </div>
         </div>
         <div className="carousel-item c-item">
@@ -89,9 +93,10 @@ const CarouselImg = () => {
               Polishing
             </p>
             <h1 className="display-1 fw-bolder text-capitalize bannerCaption">
-            Delivering Our Accurate Work Just In Time As You Wish!
+            Delivering Our Accurate Work Just In Time!
             </h1>
-            <h5 className="text-focus-in">Implementing efficient processes, using the right tools and cleaning methods, prioritizing tasks, and ensuring properly trained and supervised staff.</h5>
+            <h5 className="text-focus-in">Right tools and cleaning methods, prioritizing tasks, and ensuring properly trained and supervised staff.</h5>
+            <div class="btn-container">
             <button className="btn px-4 py-2 fs-5 mt-5 carouselBtn">
               Start Now
             </button>
@@ -102,6 +107,7 @@ const CarouselImg = () => {
             >
               Contact Us
             </button>
+          </div>
           </div>
         </div>
       </div>

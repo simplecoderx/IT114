@@ -257,7 +257,7 @@ function Testimonials() {
                  <span className="testimonial-names">Maria Sotis</span>
                 <div className="star-ratings"><StarRating numStars={5} rating={4} /></div>
                 <p className="testimonial-text">
-                  "I hired them for a deep cleaning of my restaurant, and I was blown away by the level of service they provided. The team was punctual, well-organized, and efficient. They worked tirelessly for hours, leaving the restaurant sparkling clean and smelling fresh. They managed to clean some areas that I thought were impossible to clean. I'm impressed! Highly recommended! "
+                  "I hired them for a deep cleaning of my restaurant, and I was blown away by the level of service they provided. They're punctual, well-organized, and efficient, worked tirelessly for hours, leaving the restaurant sparkling clean and smelling fresh. They managed to clean some areas that I thought were impossible to clean. Highly recommended! "
                 </p>
               </div>
             </div>

@@ -17,7 +17,7 @@
     align-items: left;
     text-align: left;
 } */
-.hr-lines:before {
+.lines:before {
     content: " ";
     display: block;
     height: 2px;
@@ -28,7 +28,7 @@
     background: orange;
 }
 
-.hr-lines {
+.lines {
     position: relative;
     text-align: left;
     margin-left: 10rem;
@@ -36,7 +36,7 @@
     font-style: italic;
 }
 
-.hr-lines:after {
+.lines:after {
     content: " ";
     height: 2px;
     width: 130px;
@@ -83,6 +83,7 @@
 .colcards {
     /* background-color: yellow; */
     /* margin: 1rem; */
+    margin-left: 1rem;
 }
 
 .card {
@@ -221,7 +222,7 @@ li {
     border-color: skyblue;
     border-radius: 30px;
     color: skyblue;
-    margin-top:-6rem;
+    margin-top: -6rem;
     padding-bottom: 5px;
 }
 
@@ -258,29 +259,33 @@ li {
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    }
-    @-webkit-keyframes slideInUp {
+}
+
+@-webkit-keyframes slideInUp {
     0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
     }
+
     100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-    }
-    @keyframes slideInUp {
+}
+
+@keyframes slideInUp {
     0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
     }
+
     100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-    } 
+}
 
 @media (min-width: 576px) {
     .card-deck {
@@ -295,5 +300,168 @@ li {
         margin-right: 15px;
         margin-bottom: 30px;
         margin-left: 15px;
+    }
+    .lines:before {
+        content: " ";
+        display: block;
+        height: 2px;
+        width: 130px;
+        position: absolute;
+        top: 50%;
+        left: -150px;
+        background: orange;
+    }
+}
+@media screen and (max-width: 576px){
+    .plansDivider {
+        background-color: white;
+        margin: 5px;
+        padding: 15px;
+        margin-bottom: 20rem;
+        height: 140rem;
+    }
+    
+    .plans-container {
+        background-color: white;
+        margin: 50px;
+    }
+    .lines {
+        position: relative;
+        text-align: left;
+        margin-left: 7rem;
+        color: orange;
+        font-style: italic;
+    }
+    
+    .lines:after {
+        content: " ";
+        height: 2px;
+        width: 130px;
+        background: orange;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -1rem;
+    }
+
+    .bordered-text {
+        margin-left: -1.8rem;
+        font-size: 5rem;
+        color: white;
+        /* Unfortunately you can't use transparent here … */
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000
+    }
+    
+    @supports((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
+        .bordered-text {
+            color: transparent;
+            -webkit-text-stroke: 2px black;
+            text-stroke: 2px black;
+            text-shadow: none;
+        }
+    }
+    
+    .non-bordered-text {
+        margin-left: -1rem;
+        font-size: 5rem;
+        color: black;
+        /* Set the text color */
+        padding: 5px 10px;
+    }
+    
+    .shortDescription h6 {
+        margin-left: -1.8rem;
+        color: black;
+        font-size: 18px;
+        font-weight: 2;
+    }
+    .card {
+        margin-left: 2.5rem;
+        width: 370px;
+        height: 40rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+            0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+            0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+        flex-basis: calc(33.33% - 20px);
+        margin-top: 20px;
+        padding: 0;
+        background-color: rgb(38, 57, 112);
+    }
+    
+    .logoplans {
+        width: 80px;
+        height: 80px;
+        color: white;
+        filter: brightness(0) invert(1);
+        margin: 18px;
+    }
+    
+    .pesoSign {
+        font-size: 30px;
+        bottom: -19rem;
+        color: #99c2f2;
+        /* background-color: yellow; */
+    }
+    
+    .perproj {
+        font-size: 24px;
+        font-style: italic;
+        color: #99c2f2;
+    }
+    
+    .card-title {
+        font-weight: bold;
+        font-size: 5rem;
+        margin-bottom: 0.5rem;
+        /* background-color: green; */
+        margin-top: -3rem;
+        margin-left: 1rem;
+        color: white;
+    }
+    
+    .card-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: orange;
+    }
+    
+    .starterplan {
+        color: white;
+        font-size: 24px;
+    }
+    
+    .underline {
+        /* background-color: white; */
+        margin-top: -1rem;
+        margin-left: 2px;
+        color: gray;
+    }
+    
+    li {
+        padding-bottom: 20px;
+        color: white;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: bold;
+        margin-left: -20px;
+    }
+    
+    .card-text .img {
+        text-indent: 30px;
+    }
+    .colcards {
+        /* background-color: yellow; */
+        /* margin: 1rem; */
+        margin-left: 1px;
     }
 }

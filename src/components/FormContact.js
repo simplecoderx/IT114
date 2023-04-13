@@ -99,7 +99,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { useForm } from "@formcarry/react";
-
 import "./Contact.css";
 
 function FormContact() {
@@ -126,10 +125,10 @@ function FormContact() {
   return (
     <div>
       <Form className="form-contact" onSubmit={handleSubmit}>
-        <div className="d-flex mb-3">
+        <div className="d-flex mb-3 nameEmailContainer">
           <Form.Group
             style={{ width: "50%" }}
-            className="me-3"
+            className="me-3 name-input"
             controlId="formBasicName"
           >
             <Form.Label htmlFor="name">Name*</Form.Label>
@@ -141,9 +140,9 @@ function FormContact() {
               required
             />
           </Form.Group>
-          <Form.Group className="me-3" controlId="formBasicEmail">
+          <Form.Group className="me-3 email-input" controlId="formBasicEmail">
             <Form.Label htmlFor="email">Email*</Form.Label>
-            <Form.Control type="email" placeholder="Enter your email" style={{ width:'20rem' }} required/>
+            <Form.Control type="email" placeholder="Enter your email" className="email-field" required/>
             {/* <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text> */}
@@ -154,7 +153,7 @@ function FormContact() {
           <Form.Control
             type="text"
             name="subject"
-            style={{ width:'39rem' }}
+            className="subject-field"
             placeholder="Enter the subject of your message"
             required
           />
@@ -167,11 +166,11 @@ function FormContact() {
             as="textarea"
             rows={3}
             placeholder="Enter your message"
-            style={{ width:'39rem' }} 
+            className="message-field"
             required
           />
         </Form.Group>
-        <Button variant="primary" type="submit" className="btn px-4 py-2 fs-5 mt-5 FormContactBtn">
+        <Button type="submit" className="FormContactBtn">
           Submit
         </Button>
       </Form>

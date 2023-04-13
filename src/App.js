@@ -22,7 +22,7 @@ import Divider from './components/Divider';
 import PopupForm from './components/PopupForm';
 import PricingPage from './components/PricingPage';
 import MyFormcarry from './components/MyFormcarry';
-
+import './index.css';
 function App() {
   return (
     <div>
@@ -41,16 +41,17 @@ function App() {
       {/* <Navbar/> */}
       <Navi/>
       <CarouselImg/>
-      <TwoDivs/>
-      {/* <div><BarTxt/></div> */}
+      <div className='sectionNavCar'><TwoDivs/></div>
+
+            {/* <div><BarTxt/></div> */}
      
-      {/* <Cards/> */}
+            {/* <Cards/> */}
       <Divider/>
       <Plans/>
-      {/* <Testimonials/> */}
-      {/* <PopupForm/> */}
-      {/* <PricingPage/> */}
-      {/* <MyFormcarry/> */}
+            {/* <Testimonials/> */}
+            {/* <PopupForm/> */}
+            {/* <PricingPage/> */}
+            {/* <MyFormcarry/> */}
       <Contact/>
     </div>
   );

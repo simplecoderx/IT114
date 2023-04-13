@@ -14,6 +14,7 @@ function Contact() {
           <li>info@example.com<br />support@example.com</li>
         </ul>
       </div> */}
+      {/* <div className="contact-container"> */}
       <div className="contact-div-left">
         <div className="contact-info">
           <h1><i class="fas fa-map-marker-alt location-icon"></i>Our Locations</h1>
@@ -33,6 +34,7 @@ function Contact() {
           <FormContact/>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }
