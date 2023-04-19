@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+.row{
+  height: 550px;
+}
+.testimonial-container{
+ 
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 60%;
+  /* padding: 10px; */
+  height: 800px; /* Should be removed. Only for demonstration */
+  padding: 2rem;
+  margin-top: 1rem;
+  /* border: 2px solid black; */
+  background-image: url('../assets/services/sanitizing/testimonial-bg.jpg');
+  background-size: cover; 
+  background-position: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .column1 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+  padding: 2rem;
+  margin-top: 1rem;
+  /* border: 2px solid black; */
+  background-color: rgb(38, 57, 112);
+}
+.row .column .carddiv1{
+  /* padding-top: 2rem; */
+}
+.row .column .carddiv{
+  padding-top: 2rem;
+}
+
+.plans-container {
+  background-color: white;
+  margin: 50px;
+}
+
+.plansDiv {
+  background-color: white;
+  margin: 5px;
+  padding: 15px;
+}
+.shortDescription h6 {
+  color: black;
+  font-size: 18px;
+  font-weight: 2;
+}
+.hs-lines:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: -160px;
+  background: orange;
+}
+
+.hs-lines {
+  position: relative;
+  text-align: left;
+  margin-left: 13rem;
+  color: orange;
+  font-style: italic;
+}
+
+.hs-lines:after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 2.10rem;
+}
+
+.testimonial-txt{
+  margin-top: 5.5rem;
+}
+
+.shortDescription .testimonial-title{
+  font-size: 4rem;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 3rem;
+}
+
+.testimonialBtn{
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 7.5rem;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 30px;
+  color: 2px solid white;
+  margin-top:-6rem;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.testimonialBtn:hover{
+  border-radius: 3rem;
+  width: 15rem;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 7.5rem;
+  background-color: transparent;
+  border-color: orange;
+  border-radius: 30px;
+  color: orange;
+  margin-top:-6rem;
+  padding-bottom: 5px;
+}
+@media (max-width: 991.98px){
+  .row{
+    height: 60rem;
+    display: block;
+  }
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: none;
+    width: 100%;
+    /* padding: 10px; */
+    height: 810px; /* Should be removed. Only for demonstration */
+    padding: 2rem;
+    margin-top: 0;
+    /* border: 2px solid black; */
+    background-image: url('../assets/services/sanitizing/testimonial-bg.jpg');
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .row .column1 {
+    float: none;
+    width: 100%;
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+    padding: 2rem;
+    margin-top: 1rem;
+    padding-top: -1rem;
+    /* border: 2px solid black; */
+    background-color: rgb(38, 57, 112);
+  }
+  .row .column .carddiv1{
+    /* padding-top: 2rem; */
+  }
+  .row .column .carddiv{
+    padding-top: 2rem;
+  }
+  
+  .plans-container {
+    background-color: white;
+    margin: 50px;
+  }
+  
+  .plansDiv {
+    background-color: white;
+    margin: 5px;
+    padding: 15px;
+  }
+  .shortDescription h6 {
+    color: black;
+    font-size: 18px;
+    font-weight: 2;
+  }
+  .hs-lines {
+    position: relative;
+    text-align: left;
+    margin-left: 11rem;
+    color: orange;
+    font-style: italic;
+    margin-top: -3rem;
+  }
+  
+  .hs-lines:after {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: orange;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+  }
+  
+  .testimonial-txt{
+    margin-top: 5.5rem;
+  }
+  
+  .shortDescription .testimonial-title{
+    font-size: 2rem;
+    color: white;
+    padding: 35px 10px;
+    margin-left: -5px;
+  }
+  
+  .testimonialBtn{
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+    background-color: orange;
+    border-color: orange;
+    border-radius: 30px;
+    color: 1px solid white;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: -15rem;
+    border-radius: 3rem;
+  }
+  .testimonialBtn:hover{
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+    background-color: transparent;
+    border-color: orange;
+    border-radius: 30px;
+    color: 1px solid orange;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: -15rem;
+    border-radius: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .carddiv {
+    width: 80%;
+    margin-top: 20px;
+  }
+}

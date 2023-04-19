@@ -10,10 +10,10 @@ function TwoDivs() {
         <h2>Column 1</h2>
         <p>Some text..</p>
       </div>
-      <div className="column">
+      {/* <div className="column">
         <div className="carddiv1"><Testimonials/></div>
-        {/* <div className="carddiv"><Cards/></div> */}
-      </div>
+      
+      </div> */}
       </div>
   );
 }

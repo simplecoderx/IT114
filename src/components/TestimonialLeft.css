@@ -1,0 +1,274 @@
+.colm1 {
+  /* background-color: green; */
+}
+
+.testimonial-txt {
+  color: orange;
+  /* background-color: red; */
+}
+
+.testimonial-ctn {
+  background-color: rgb(38, 57, 112);
+  width: 55%;
+  height: 40rem;
+  margin: 5%;
+  padding-top: 2rem;
+}
+
+.hs-lines:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: -150px;
+  background: orange;
+}
+
+.hs-lines {
+  position: relative;
+  text-align: left;
+  margin-left: 11.5rem;
+  color: orange;
+  font-style: italic;
+}
+
+.hs-lines:after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 1.8rem;
+}
+
+.shortDescription .testimonial-title {
+  font-size: 4rem;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 2rem;
+}
+
+.testimonialBtn {
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 7.5rem;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 30px;
+  color: 2px solid white;
+  margin-top: -6rem;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.testimonialBtn:hover {
+  border-radius: 3rem;
+  width: 15rem;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 7.5rem;
+  background-color: transparent;
+  border-color: orange;
+  border-radius: 30px;
+  color: orange;
+  margin-top: -6rem;
+  padding-bottom: 5px;
+}
+@media (max-width: 1200px) {
+  .testimonial-ctn {
+    background-color: rgb(38, 57, 112);
+    width: 90%;
+    height: 27rem;
+    margin: 5%;
+    padding-top: 2rem;
+  }
+
+  .testimonialBtn {
+    margin-left: 18.5rem;
+  }
+
+  .testimonialBtn:hover {
+    margin-left: 18.5rem;
+  }
+
+  .hs-lines {
+    right: -12.3rem;
+  }
+
+  .hs-lines:after {
+    right: 27rem;
+  }
+
+  .shortDescription .testimonial-title {
+    font-size: 4rem;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .testimonial-ctn {
+    background-color: rgb(38, 57, 112);
+    width: 90%;
+    height: 27rem;
+    margin: 5%;
+    padding-top: 2rem;
+  }
+
+  .testimonialBtn {
+    margin-left: 16.5rem;
+  }
+
+  .testimonialBtn:hover {
+    margin-left: 16.5rem;
+  }
+
+  .hs-lines {
+    right: -9.9rem;
+  }
+
+  .hs-lines:after {
+    right: 22rem;
+  }
+
+  .shortDescription .testimonial-title {
+    font-size: 4rem;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonial-ctn {
+    background-color: rgb(38, 57, 112);
+    width: 90%;
+    height: 27rem;
+    margin: 5%;
+    padding-top: 2rem;
+  }
+
+  .testimonialBtn {
+    margin-left: 13.5rem;
+  }
+
+  .testimonialBtn:hover {
+    margin-left: 13.5rem;
+  }
+
+  .hs-lines {
+    right: -6.5rem;
+  }
+
+  .hs-lines:after {
+    right: 15.5rem;
+  }
+
+  .shortDescription .testimonial-title {
+    font-size: 4rem;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .testimonial-ctn {
+    background-color: rgb(38, 57, 112);
+    width: 90%;
+    height: 35rem;
+    margin: 5%;
+    padding-top: 2rem;
+  }
+
+  .testimonialBtn {
+    margin-left: 10.5rem;
+  }
+
+  .testimonialBtn:hover {
+    margin-left: 10.5rem;
+  }
+
+  .hs-lines {
+    right: -4.2rem;
+  }
+
+  .hs-lines:after {
+    right: 10.5rem;
+  }
+
+  .shortDescription .testimonial-title {
+    font-size: 4rem;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-ctn {
+    background-color: rgb(38, 57, 112);
+    width: 90%;
+    height: 40rem;
+    margin: 5%;
+    padding-top: 2rem;
+  }
+
+  .testimonialBtn {
+    margin-left: 8.5rem;
+  }
+
+  .testimonialBtn:hover {
+    margin-left: 6.5rem;
+  }
+
+  .hs-lines {
+    right: -1.5rem;
+  }
+
+  .hs-lines:after {
+    right: 4.5rem;
+  }
+
+  .shortDescription .testimonial-title {
+    font-size: 4rem;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .testimonial-ctn {
+    background-color: rgb(38, 57, 112);
+    width: 90%;
+    height: 40rem;
+    margin: 5%;
+    padding-top: 2rem;
+  }
+
+  .testimonialBtn {
+    margin-left: 6.5rem;
+  }
+
+  .testimonialBtn:hover {
+    margin-left: 6.5rem;
+  }
+
+  .hs-lines {
+    right: .8rem;
+  }
+
+  .hs-lines:after {
+    right: .8rem;
+  }
+}

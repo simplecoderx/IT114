@@ -159,10 +159,10 @@ import { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import "./Testimonial.css";
 import StarRating from "./StarRating";
-import customer1 from './../assets/feedback/mary-raz.jpg'
-import customer2 from './../assets/feedback/kevin-chen.jpg'
-import customer3 from './../assets/feedback/roga-acero.jpg'
-import customer4 from './../assets/feedback/maria-sotis.jpg'
+import customer1 from "./../assets/feedback/mary-raz.jpg";
+import customer2 from "./../assets/feedback/kevin-chen.jpg";
+import customer3 from "./../assets/feedback/roga-acero.jpg";
+import customer4 from "./../assets/feedback/maria-sotis.jpg";
 
 function Testimonials() {
   const [index, setIndex] = useState(0);
@@ -172,7 +172,7 @@ function Testimonials() {
   };
 
   return (
-    <div className="testimonial-container" id="testimonials">
+    <div className="testimonialContainer" id="testimonials">
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
@@ -210,7 +210,7 @@ function Testimonials() {
       >
         <Carousel.Item>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 sample">
               <div className="testimonial-card">
                 <img
                   className="testimonial-image"
@@ -218,28 +218,40 @@ function Testimonials() {
                   alt="Testimonial"
                 />
                 <span className="testimonial-names">Mary Raz</span>
-                <div className="star-ratings"><StarRating numStars={5} rating={4} /></div>
-                <p style={{textAlign: 'justify'}} className="testimonial-text">
-                  "I recently hired HINLO Services to clean my office,
-                   and I must say I was impressed with their work. 
-                   The cleaners arrived on time, very professional, meticulous
-                    and paid attention to detail, ensuring that every corner of
-                     the office was thoroughly cleaned. I highly recommended
-                      and will definitely be using their services again in the future."
+                <div className="star-ratings">
+                  <StarRating numStars={5} rating={4} />
+                </div>
+                <p
+                  style={{ textAlign: "justify" }}
+                  className="testimonial-text"
+                >
+                  "I recently hired HINLO Services to clean my office, and I
+                  must say I was impressed with their work. The cleaners arrived
+                  on time, very professional, meticulous and paid attention to
+                  detail, ensuring that every corner of the office was
+                  thoroughly cleaned. I highly recommended and will definitely
+                  be using their services again in the future."
                 </p>
               </div>
             </div>
             <div className="col-md-6">
-              <div className="testimonial-card">
+              <div className="testimonial-card testimonial2-cards">
                 <img
                   className="testimonial-image"
                   src={customer3}
                   alt="Testimonial"
                 />
-                 <span className="testimonial-names">Roga Acero</span>
-                <div className="star-ratings"><StarRating numStars={5} rating={5} /></div>
+                <span className="testimonial-names">Roga Acero</span>
+                <div className="star-ratings">
+                  <StarRating numStars={5} rating={5} />
+                </div>
                 <p className="testimonial-text">
-                "I recently had them come to my home, and I must say, I'm extremely pleased with the results. Cleaners were very thorough, paid attention to the smallest details & took care of all the nooks and crannies and even managed to get rid of a stubborn stain. Professional and friendly team, and I felt comfortable having them in my home. I highly recommend HINLO Services and will definitely be using their services again."
+                  "I recently had them come to my home, and I must say, I'm
+                  extremely pleased with the results. Cleaners were very
+                  thorough, paid attention to the smallest details & took care
+                  of all the nooks and crannies and even managed to get rid of a
+                  stubborn stain. Professional and friendly team, and I felt
+                  comfortable having them in my home. I highly them and will definitely be using their services again."
                 </p>
               </div>
             </div>
@@ -254,24 +266,37 @@ function Testimonials() {
                   src={customer4}
                   alt="Testimonial"
                 />
-                 <span className="testimonial-names">Maria Sotis</span>
-                <div className="star-ratings"><StarRating numStars={5} rating={4} /></div>
+                <span className="testimonial-names">Maria Sotis</span>
+                <div className="star-ratings">
+                  <StarRating numStars={5} rating={4} />
+                </div>
                 <p className="testimonial-text">
-                  "I hired them for a deep cleaning of my restaurant, and I was blown away by the level of service they provided. They're punctual, well-organized, and efficient, worked tirelessly for hours, leaving the restaurant sparkling clean and smelling fresh. They managed to clean some areas that I thought were impossible to clean. Highly recommended! "
+                  "I hired them for a deep cleaning of my restaurant, and I was
+                  blown away by the level of service they provided. They're
+                  punctual, well-organized, and efficient, worked tirelessly for
+                  hours, leaving the restaurant sparkling clean and smelling
+                  fresh. They managed to clean some areas that I thought were
+                  impossible to clean. Highly recommended! "
                 </p>
               </div>
             </div>
             <div className="col-md-6">
-              <div className="testimonial-card">
+              <div className="testimonial-card testimonial2-cards">
                 <img
                   className="testimonial-image"
                   src={customer2}
                   alt="Testimonial"
                 />
-                 <span className="testimonial-names">Kevin Chen</span>
-                <div className="star-ratings"><StarRating numStars={5} rating={4} /></div>
+                <span className="testimonial-names">Kevin Chen</span>
+                <div className="star-ratings">
+                  <StarRating numStars={5} rating={4} />
+                </div>
                 <p className="testimonial-text">
-                "The team was friendly and professional, worked quickly and efficiently and able to remove all the stains and spots on my carpets, and they looked and smelled like new. I highly recommend HINLO Cleaning Services for their expertise, professionalism, and exceptional customer service."
+                  "The team was friendly and professional, worked quickly and
+                  efficiently and able to remove all the stains and spots on my
+                  carpets, and they looked and smelled like new. I highly
+                  recommend HINLO Cleaning Services for their expertise,
+                  professionalism, and exceptional customer service."
                 </p>
               </div>
             </div>

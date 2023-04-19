@@ -141,7 +141,6 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: white;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
@@ -158,20 +157,50 @@
     /* padding-bottom:1rem; */
 }
 
-.getStartedBtn{
-    background-color:#4f96e8;
-    color:white;
+.getStartedBtn {
+    background-color: #4f96e8;
+    color: white;
     border-radius: 12px;
     justify-content: center;
     border: 2px solid white;
-}
-
-.getStartedBtn:hover{
-    background-color:white;
-    color:#4f96e8;
+    text-decoration: none;
+    /* margin-top: -1rem; */
+    
+    height: 2.5rem;
+  }
+  
+  .getStartedBtn:hover {
+    background-color: white;
+    color: #4f96e8;
     box-shadow: #fff;
     border-color: #4f96e8;
-}
+    text-decoration: none;
+  }
+  
+  .getStartedBtn:visited {
+    text-decoration: none;
+  }
+  
+  .getStartedBtn:focus,
+  .getStartedBtn:active {
+    outline: none;
+    text-decoration: none;
+  }
+  
+  /* Remove underline */
+  .getStartedBtn span {
+    text-decoration: none;
+  }
+  
+  /* Remove dotted border on click */
+  .getStartedBtn::-moz-focus-inner {
+    border: 0;
+  }
+  
+  .getStartedBtn:active {
+    outline: none;
+  }
+  
 
 @media (max-width: 991.98px) {
     body{
@@ -193,7 +222,9 @@
       width: 100%;
       text-align: center;
       align-items: center;
+      text-decoration: none;
     }
+    
     .toggleTitle{
         color: white;
     }

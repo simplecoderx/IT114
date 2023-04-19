@@ -127,7 +127,7 @@ function FormContact() {
       <Form className="form-contact" onSubmit={handleSubmit}>
         <div className="d-flex mb-3 nameEmailContainer">
           <Form.Group
-            style={{ width: "50%" }}
+            // style={{ width: "50%" }}
             className="me-3 name-input"
             controlId="formBasicName"
           >
