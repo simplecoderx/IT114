@@ -8,9 +8,12 @@
 }
 
 .col2 {
-    background-color: #ffa500;
+    /* background-color: #ffa500; */
     margin-left: -20rem;
     padding-top: 1rem;
+    background-image: url('../assets/services/sanitizing/testimonial-bg.jpg');
+    background-size: cover; 
+    background-position: center;
 }
 @media (max-width: 1200px) {
     .col1 {

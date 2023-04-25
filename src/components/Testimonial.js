@@ -4,8 +4,8 @@ import Col from "react-bootstrap/Col";
 // import './TwoDivs.css'
 import TestimonialLeft from "./TestimonialLeft";
 import Testimonials from "./Testimonials";
-import "./Sample.css";
-function Sample() {
+import "./Testimonials.css";
+function Testimonial() {
   return (
     <div class="row">
       <div class="col-lg col1"><TestimonialLeft /></div>
@@ -14,4 +14,4 @@ function Sample() {
   );
 }
 
-export default Sample;
+export default Testimonial;
