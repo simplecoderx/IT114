@@ -288,10 +288,11 @@ li {
 }
 @media screen and (max-width: 1500px){
     .plansDivider {
-        background-color: violet;
+        background-color: transparent;
         margin: 5px;
         padding: 15px;
         margin-bottom: -10rem;
+        margin-top: 10rem;
         height: 65rem;
     }  
     .colcards {
@@ -486,11 +487,11 @@ li {
 }
 @media (max-width: 992px) {
     .plansDivider {
-        background-color: blue;
+        background-color: transparent;
         margin: 5px;
         padding: 15px;
         margin-bottom: -8rem;
-        margin-top: 20rem;
+        margin-top: 33.5rem;
         height: 140rem;
     }
     .colcards {
@@ -521,11 +522,11 @@ li {
   }
   @media (max-width: 900px){
     .plansDivider {
-        background-color: gray;
+        background-color: transparent;
         margin-left: 5px;
         padding: 15px;
         margin-bottom: 20rem;
-        margin-top: 28rem;
+        margin-top: 36rem;
         height: 140rem;
     }
     .colcards {
@@ -545,11 +546,11 @@ li {
 
 @media (max-width: 800px){
     .plansDivider {
-        background-color: pink;
+        background-color: transparent;
         margin-left: 5px;
         padding: 15px;
         margin-bottom: 20rem;
-        margin-top: 39.5rem;
+        margin-top: 36.5rem;
         height: 140rem;
     }
     .colcards {
@@ -568,11 +569,11 @@ li {
   }
   @media (max-width: 700px){
     .plansDivider {
-        background-color: gray;
+        background-color: transparent;
         margin-left: 5px;
         padding: 15px;
         margin-bottom: 20rem;
-        margin-top: 49.5rem;
+        margin-top: 56rem;
         height: 140rem;
     }
     .colcards {
@@ -591,11 +592,11 @@ li {
   }
   @media (max-width: 650px){
     .plansDivider {
-        background-color: lightcoral;
+        background-color: transparent;
         margin-left: 5px;
         padding: 15px;
+        margin-top: 55rem;
         margin-bottom: 20rem;
-        height: 140rem;
     }
     .colcards {
         margin-left: 5.5rem;
@@ -613,7 +614,7 @@ li {
   }
   @media (max-width: 600px){
     .plansDivider {
-        background-color: green;
+        background-color: transparent;
         margin-left: 5px;
         padding: 15px;
         margin-bottom: 20rem;
@@ -636,7 +637,7 @@ li {
   }
   @media (max-width: 500px) {
     .plansDivider {
-        background-color: black;
+        background-color: transparent;
         margin: 5px;
         padding: 15px;
         margin-bottom: 20rem;
