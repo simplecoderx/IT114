@@ -4,7 +4,7 @@
 }
 
 .col1 {
-    background-color: green;
+    background-color: transparent;
 }
 
 .col2 {
@@ -17,7 +17,7 @@
 }
 @media (max-width: 1200px) {
     .col1 {
-        background-color: lightsalmon;
+        background-color: transparent;
         margin-bottom: -15rem;
     }
 
@@ -26,13 +26,15 @@
         margin: 12rem;
         margin-top: 3rem;
         margin-left: 13rem;
-        height: 50%;
+        height: 37rem;
+        padding-top: 4rem;
+        padding-bottom: -15rem;
     }
 }
 
 @media (max-width: 900px) {
     .col1 {
-        background-color: gray;
+        background-color: transparent;
         margin-bottom: -15rem;
     }
 
@@ -41,12 +43,15 @@
         margin: 12rem;
         margin-top: 3rem;
         margin-left: 13rem;
+        height: 40rem;
+        padding-top: 4rem;
+        padding-bottom: -15rem;
     }
 }
 
 @media (max-width: 800px) {
     .col1 {
-        background-color: blue;
+        background-color: transparent;
         margin-bottom: -15rem;
     }
 
@@ -56,6 +61,8 @@
         margin-top: 3rem;
         margin-bottom: 50rem;
         margin-left: 13rem;
+        padding-top: 4rem;
+        padding-bottom: -15rem;
     }
 }
 
@@ -74,42 +81,48 @@
 
 @media (max-width: 700px) {
     .col1 {
-        background-color: magenta;
+        background-color: transparent;
         margin-bottom: -6rem;
     }
 
     .col2 {
         background-color: gray;
         margin: 12rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         margin-bottom: 50rem;
         margin-left: 13rem;
+        padding-top: 4rem;
+        padding-bottom: -15rem;
     }
 }
 
 @media (max-width: 600px) {
     .col1 {
-        background-color: blue;
+        background-color: transparent;
     }
 
     .col2 {
         background-color: violet;
         margin: 12rem;
-        margin-top: 3rem;
+        margin-top: 8rem;
         margin-bottom: 50rem;
         margin-left: 13rem;
+        padding-top: 4rem;
+        padding-bottom: -15rem;
     }
 }
 
 @media (max-width: 500px) {
     .col1 {
-        background-color: red;
+        background-color: transparent;
+        margin-bottom: -25px;
     }
 
     .col2 {
         background-color: orange;
         margin: 12rem;
         margin-top: 3rem;
-        margin-bottom: 50rem;
+        padding-top: 4rem;
+        padding-bottom: -15rem;
     }
 }

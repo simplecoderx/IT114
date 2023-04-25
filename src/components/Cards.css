@@ -73,32 +73,6 @@
     height: 4rem;
     margin-top: 1rem;
 }
-
-/* .sample:hover {
-    animation: wiggle 1.5s ease-in-out;
-    animation-iteration-count: 1;
-  }
-  @keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(8deg);
-    }
-    40% {
-      transform: rotate(-8deg);
-    }
-    60% {
-      transform: rotate(4deg);
-    }
-    80% {
-      transform: rotate(-4deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  } */
-  
 .flipInY {
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
@@ -175,26 +149,3 @@
         transform: perspective(400px);
     }
 }
-
-/* Custom styles for the first card */
-
-/* Flex container to hold the cards */
-/* .card-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* Custom styles for the first card */
-/* .card1 {
-    background-color: black;
-    margin-top: 20px;
-    flex-basis: 50%;
-    width: 40%;
-  }
-  
-  /* Custom styles for the second card */
-/* .card2 {
-    background-color: #f5f5f5;
-    margin-bottom: 20px;
-    flex-basis: 50%;
-  } */

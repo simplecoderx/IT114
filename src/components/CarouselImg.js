@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./CarouselImg.css";
-import image1 from "./../components/images/1.jpg";
+import image1 from "./../assets/carousel/pexels-karolina-grabowska-4239145.jpg";
+import image2 from "./../assets/carousel/woman-g20b629547_1920.jpg";
+import image3 from "./../assets/carousel/pexels-pixabay-48889.jpg";
 
 const CarouselImg = () => {
   return (
@@ -30,7 +32,7 @@ const CarouselImg = () => {
       <div className="carousel-inner">
         <div className="carousel-item active c-item">
           <img
-            src="https://images.unsplash.com/photo-1579033461380-adb47c3eb938?fit=crop&w=1964&q=100"
+            src={image1}
             className="d-block w-100 c-img"
             alt="Slide 1"
           />
@@ -58,7 +60,7 @@ const CarouselImg = () => {
         </div>
         <div className="carousel-item c-item">
           <img
-            src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?fit=crop&w=2134&q=100"
+            src={image2}
             className="d-block w-100 c-img"
             alt="Slide 2"
           />
@@ -84,7 +86,7 @@ const CarouselImg = () => {
         </div>
         <div className="carousel-item c-item">
           <img
-            src="https://images.unsplash.com/photo-1612686635542-2244ed9f8ddc?fit=crop&w=2070&q=100"
+            src={image3}
             className="d-block w-100 c-img"
             alt="Slide 3"
           />

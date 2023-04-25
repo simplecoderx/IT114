@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import './Plans.css';
+import "./Plans.css";
 import { Button } from "react-bootstrap";
 import cleaningcart from "./images/cleaning-cart.png";
 import cleaningservice from "./images/cleaning-service.png";
 import house from "./images/house.png";
-// import tick from "./images/tick.png";
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
-import axios from 'axios';
-import PopupForm from './PopupForm';
+import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
+import axios from "axios";
+import PopupForm from "./PopupForm";
 function Plans() {
-  
   const [show, setShow] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    chosenplan:'',
-    message: '',
+    name: "",
+    email: "",
+    chosenplan: "",
+    message: "",
   });
   const [formSubmitStatus, setFormSubmitStatus] = useState({
     submitting: false,
@@ -39,17 +37,13 @@ function Plans() {
     event.preventDefault();
     setFormSubmitStatus({ submitting: true, error: false, success: false });
     try {
-      await axios.post(
-        'https://formcarry.com/s/JqqxnckAco',
-        formData,
-        {
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            // 'formcarry-key': 'YOUR_FORMCARRY_API_KEY',
-          },
-        }
-      );
+      await axios.post("https://formcarry.com/s/JqqxnckAco", formData, {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          // 'formcarry-key': 'YOUR_FORMCARRY_API_KEY',
+        },
+      });
       setFormSubmitStatus({ submitting: false, error: false, success: true });
     } catch (error) {
       setFormSubmitStatus({ submitting: false, error: true, success: false });
@@ -114,14 +108,14 @@ function Plans() {
               </Card.Text>
             </Card.Body>
             <Card.Footer>
-            {/* <Button className="planbutton" onClick={handleShow}>
+              {/* <Button className="planbutton" onClick={handleShow}>
                 Click Here
               </Button> */}
-              <PopupForm 
-              className="planbutton"
-              planName="Starter"
-              planDescription="Description of the starter plan."
-              buttonLabel="Click Here"
+              <PopupForm
+                className="planbutton"
+                planName="Starter"
+                planDescription="Description of the starter plan."
+                buttonLabel="Click Here"
               />
             </Card.Footer>
           </Card>
@@ -129,7 +123,11 @@ function Plans() {
         <Col className="colcards slideInUp">
           <Card className="planCards">
             <Card.Body>
-              <img className="logoplans" src={cleaningservice} alt="logoplans" />
+              <img
+                className="logoplans"
+                src={cleaningservice}
+                alt="logoplans"
+              />
               <h6 className="pesoSign">₱</h6>
               <Card.Title className="price">
                 499<span className="perproj">/Per Project</span>
@@ -154,7 +152,9 @@ function Plans() {
                       <span class="checkmark">&#10003;</span>
                     </li>
                     <li>
-                      <span class="item-text">Cleaning mirrors and glass surfaces</span>
+                      <span class="item-text">
+                        Cleaning mirrors and glass surfaces
+                      </span>
                       <span class="checkmark">&#10003;</span>
                     </li>
                   </ul>
@@ -165,14 +165,14 @@ function Plans() {
               </Button> */}
             </Card.Body>
             <Card.Footer>
-            {/* <Button className="planbutton" onClick={handleShow}>
+              {/* <Button className="planbutton" onClick={handleShow}>
                 Click Here
               </Button> */}
-              <PopupForm 
-              className="planbutton"
-              planName="Pro"
-              planDescription="Description of the pro plan."
-              buttonLabel="Click Here"
+              <PopupForm
+                className="planbutton"
+                planName="Pro"
+                planDescription="Description of the pro plan."
+                buttonLabel="Click Here"
               />
             </Card.Footer>
           </Card>
@@ -201,47 +201,44 @@ function Plans() {
                       <span class="checkmark">&#10003;</span>
                     </li>
                     <li>
-                      <span class="item-text">Dusting blinds and window sills</span>
+                      <span class="item-text">
+                        Dusting blinds and window sills
+                      </span>
                       <span class="checkmark">&#10003;</span>
                     </li>
                     <li>
-                      <span class="item-text">Baseboards and crown moldings</span>
+                      <span class="item-text">
+                        Baseboards and crown moldings
+                      </span>
                       <span class="checkmark">&#10003;</span>
                     </li>
                     <li>
-                      <span class="item-text">Oven and fridge (if requested)</span>
+                      <span class="item-text">
+                        Oven and fridge (if requested)
+                      </span>
                       <span class="checkmark">&#10003;</span>
                     </li>
                     <li>
-                      <span class="item-text">Folding laundry and changing bed linens (if requested)</span>
+                      <span class="item-text">
+                        Folding laundry and changing bed linens (if requested)
+                      </span>
                       <span class="checkmark">&#10003;</span>
                     </li>
                   </ul>
                 </div>
               </Card.Text>
-              {/* <Button className="planbutton" variant="primary">
-                Click Here
-              </Button> */}
             </Card.Body>
             <Card.Footer>
-            {/* <Button className="planbutton" onClick={handleShow}>
-                Click Here
-              </Button> */}
-              <PopupForm 
-              className="planbutton"
-              planName="Ultimate"
-              planDescription="Description of the ultimate plan."
-              buttonLabel="Click Here"
+              <PopupForm
+                className="planbutton"
+                planName="Ultimate"
+                planDescription="Description of the ultimate plan."
+                buttonLabel="Click Here"
               />
             </Card.Footer>
           </Card>
         </Col>
       </Row>
-
-      {/* <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button> */}
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
@@ -291,7 +288,9 @@ function Plans() {
               />
             </Form.Group>
             {formSubmitStatus.error && (
-              <p className="text-danger">There was an error submitting the form. Please try again later.</p>
+              <p className="text-danger">
+                There was an error submitting the form. Please try again later.
+              </p>
             )}
             {formSubmitStatus.success && (
               <p className="text-success">Thank you for your submission!</p>
@@ -299,8 +298,12 @@ function Plans() {
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" type="submit" disabled={formSubmitStatus.submitting}>
-              {formSubmitStatus.submitting ? 'Submitting...' : 'Submit'}
+            <Button
+              variant="primary"
+              type="submit"
+              disabled={formSubmitStatus.submitting}
+            >
+              {formSubmitStatus.submitting ? "Submitting..." : "Submit"}
             </Button>
           </Form>
         </Modal.Body>

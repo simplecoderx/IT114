@@ -1,135 +1,11 @@
-// import React, { useState } from 'react';
-// import './PopupForm.css';
-
-// function PopupForm() {
-//   const [isPopupOpen, setIsPopupOpen] = useState(false);
-//   const [formData, setFormData] = useState({
-//     name: '',
-//     email: '',
-//     message: '',
-//   });
-
-//   const handleInputChange = event => {
-//     setFormData({
-//       ...formData,
-//       [event.target.name]: event.target.value,
-//     });
-//   };
-
-//   const handleSubmit = event => {
-//     event.preventDefault();
-//     // Send form data to server or perform any other action
-//     setIsPopupOpen(false);
-//   };
-
-//   return (
-//     <div className="popup-form">
-//       <button onClick={() => setIsPopupOpen(true)}>Open Form</button>
-//       {isPopupOpen && (
-//         <div className="popup-form-overlay">
-//           <div className="popup-form-content">
-//             <h2>Contact Us</h2>
-//             <form onSubmit={handleSubmit}>
-//               <label htmlFor="name">Name:</label>
-//               <input
-//                 type="text"
-//                 name="name"
-//                 value={formData.name}
-//                 onChange={handleInputChange}
-//               />
-//               <label htmlFor="email">Email:</label>
-//               <input
-//                 type="email"
-//                 name="email"
-//                 value={formData.email}
-//                 onChange={handleInputChange}
-//               />
-//               <label htmlFor="message">Message:</label>
-//               <textarea
-//                 name="message"
-//                 value={formData.message}
-//                 onChange={handleInputChange}
-//               ></textarea>
-//               <button type="submit">Send</button>
-//               <button onClick={() => setIsPopupOpen(false)}>Cancel</button>
-//             </form>
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default PopupForm;
-
-// import React, { useState } from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
-// import Modal from 'react-bootstrap/Modal';
-
-// function PopupForm() {
-//   const [show, setShow] = useState(false);
-
-//   const handleClose = () => setShow(false);
-//   const handleShow = () => setShow(true);
-
-//   return (
-//     <>
-//       <Button variant="primary" onClick={handleShow}>
-//         Launch demo modal
-//       </Button>
-
-//       <Modal show={show} onHide={handleClose}>
-//         <Modal.Header closeButton>
-//           <Modal.Title>Modal heading</Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>
-//           <Form>
-//             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-//               <Form.Label>Email address</Form.Label>
-//               <Form.Control
-//                 type="email"
-//                 placeholder="name@example.com"
-//                 autoFocus
-//               />
-//             </Form.Group>
-//             <Form.Group
-//               className="mb-3"
-//               controlId="exampleForm.ControlTextarea1"
-//             >
-//               <Form.Label>Example textarea</Form.Label>
-//               <Form.Control as="textarea" rows={3} />
-//             </Form.Group>
-//           </Form>
-//         </Modal.Body>
-//         <Modal.Footer>
-//           <Button variant="secondary" onClick={handleClose}>
-//             Close
-//           </Button>
-//           <Button variant="primary" onClick={handleClose}>
-//             Save Changes
-//           </Button>
-//         </Modal.Footer>
-//       </Modal>
-//     </>
-//   );
-// }
-
-// export default PopupForm;
-
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import axios from "axios";
-import './PopupForm.css';
+import "./PopupForm.css";
 
 function PopupForm(props) {
-  // const [show, setShow] = useState(false);
-
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
-
   const [show, setShow] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -159,12 +35,12 @@ function PopupForm(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-     // Validate phone number before submitting
-     const phoneRegex = /^\d{11}$/; // Regex for 10-digit phone number
-     if (!phoneRegex.test(formData.phone)) {
-       setPhoneError('Please enter a valid 10-digit phone number');
-       return;
-     }
+    // Validate phone number before submitting
+    const phoneRegex = /^\d{11}$/; // Regex for 10-digit phone number
+    if (!phoneRegex.test(formData.phone)) {
+      setPhoneError("Please enter a valid 10-digit phone number");
+      return;
+    }
     setFormSubmitStatus({ submitting: true, error: false, success: false });
     try {
       await axios.post("https://formcarry.com/s/JqqxnckAco", formData, {
@@ -195,28 +71,6 @@ function PopupForm(props) {
         <Modal.Body>
           <p>{props.planDescription}</p>
           <Form onSubmit={handleSubmit}>
-            {/* <Form.Group className="mb-3" controlId="name">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-              />
-            </Form.Group> */}
             <Form.Group className="mb-3" controlId="name">
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -250,7 +104,9 @@ function PopupForm(props) {
                 isInvalid={!!phoneError}
                 required
               />
-               <Form.Control.Feedback type="invalid">{phoneError}</Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">
+                {phoneError}
+              </Form.Control.Feedback>
             </Form.Group>
             <Form.Group className="mb-3" controlId="chosenplan">
               <Form.Label>Chosen Plan</Form.Label>
@@ -261,7 +117,11 @@ function PopupForm(props) {
                 value={formData.planName}
                 disabled
               />
-              <input type="hidden" name="chosenplan" value={formData.chosenplan} />
+              <input
+                type="hidden"
+                name="chosenplan"
+                value={formData.chosenplan}
+              />
             </Form.Group>
             <Form.Group className="mb-3" controlId="location">
               <Form.Label>Location</Form.Label>
@@ -274,37 +134,6 @@ function PopupForm(props) {
                 required
               />
             </Form.Group>
-
-            {/* NAME AND EMAIL WERE PLACED SIDE BY SIDE */}
-
-            {/* <div className="row">
-    <div className="col">
-      <Form.Group className="mb-3" controlId="name">
-        <Form.Label>Name</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter your name"
-          name="name"
-          value={formData.name}
-          onChange={handleInputChange}
-          required
-        />
-      </Form.Group>
-    </div>
-    <div className="col">
-      <Form.Group className="mb-3" controlId="email">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="name@example.com"
-          name="email"
-          value={formData.email}
-          onChange={handleInputChange}
-          required
-        />
-      </Form.Group>
-    </div>
-  </div> */}
             <Form.Group className="mb-3" controlId="message">
               <Form.Label>Message</Form.Label>
               <Form.Control
@@ -338,55 +167,6 @@ function PopupForm(props) {
           </Form>
         </Modal.Body>
       </Modal>
-
-      {/* asdadad asssssssssssssssssssssssssssss*/}
-
-      {/* <Button variant="primary" onClick={handleShow}>
-        {props.buttonLabel}
-      </Button>
-
-      <Modal show={show} onHide={handleClose}>
-      <h1>Client Subscription</h1>
-        <Modal.Header closeButton>
-          <Modal.Title>{props.planName} Plan</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>{props.planDescription}</p>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlSelect1">
-              <Form.Label>Select an option</Form.Label>
-              <Form.Select>
-                <option>Option 1</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
-              </Form.Select>
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal> */}
     </>
   );
 }
