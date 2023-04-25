@@ -120,7 +120,7 @@ function Plans() {
             </Card.Footer>
           </Card>
         </Col>
-        <Col className="colcards slideInUp">
+        <Col className="colcards">
           <Card className="planCards">
             <Card.Body>
               <img
