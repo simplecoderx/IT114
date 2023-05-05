@@ -38,7 +38,7 @@ export default function ModalCard4() {
 
     return (
         <div>
-            <Button onClick={handleOpen}>Learn More</Button>
+            <Button onClick={handleOpen}>Read More</Button>
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
