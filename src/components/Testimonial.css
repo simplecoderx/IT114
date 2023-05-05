@@ -9,7 +9,7 @@
    /* Create two equal columns that floats next to each other */
    .column {
      float: left;
-     width: 60%;
+     width: 100%;
      /* padding: 10px; */
      height: 800px;
      /* Should be removed. Only for demonstration */
@@ -118,7 +118,7 @@
      margin-top: -1rem;
    }
 
-   @media (max-width: 1200px) {
+   /* @media (max-width: 1200px) {
      .row {
        background-color: transparent;
      }
@@ -133,11 +133,11 @@
        margin-top: 1px;
        height: 40rem;
      }
-   }
+   } */
 
    @media (max-width: 991.98px) {
      .testimonial-card {
-       height: 30rem;
+       height: 40rem;
        font-size: 10px;
        margin-top: -1rem;
      }

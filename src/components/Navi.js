@@ -30,12 +30,12 @@ function Navi() {
             <Offcanvas.Body className='offCanvas'>
               <Nav className="justify-content-end flex-grow-1 pe-3 navLinks">
                 <Nav.Link className='nav-item' href="#hero-carousel" spy={true} smooth={true} offset={-150} duration={500}>HOME</Nav.Link>
-                <Nav.Link className='nav-item' href="#action1" spy={true} smooth={true} offset={-150} duration={500}>SERVICES</Nav.Link>
-                <Nav.Link className='nav-item' href="#action2" spy={true} smooth={true} offset={-150} duration={500}>PORTFOLIO</Nav.Link>
+                <Nav.Link className='nav-item' href="#services" spy={true} smooth={true} offset={-150} duration={500}>SERVICES</Nav.Link>
+                <Nav.Link className='nav-item' href="#portfolio" spy={true} smooth={true} offset={-150} duration={500}>PORTFOLIO</Nav.Link>
                 <Nav.Link className='nav-item' href="#plans" spy={true} smooth={true} offset={-150} duration={500}>PRICING PLANS</Nav.Link>
                 <Nav.Link className='nav-item' href="#testimonials" spy={true} smooth={true} offset={-150} duration={500}>TESTIMONIAL</Nav.Link>
-                <Nav.Link className='nav-item' href="#action5" spy={true} smooth={true} offset={-150} duration={500}>FAQ</Nav.Link>
-                <Nav.Link className='nav-item' href="#action6" spy={true} smooth={true} offset={-150} duration={500}>ABOUT US</Nav.Link>
+                <Nav.Link className='nav-item' href="#faq" spy={true} smooth={true} offset={-150} duration={500}>FAQ</Nav.Link>
+                <Nav.Link className='nav-item' href="#about" spy={true} smooth={true} offset={-150} duration={500}>ABOUT US</Nav.Link>
                 <Nav.Link className='nav-item' href="#contact" spy={true} smooth={true} offset={-150} duration={500}>CONTACT US</Nav.Link>
                 {/* <Link to="/getstarted" className="no-underline"> */}
                 <Button href="#plans" className="getStartedBtn no-underline" spy={true} smooth={true} offset={-150} duration={500}>

@@ -93,7 +93,7 @@
     /* padding-bottom:1rem; */
 }
 
-.getStartedBtn {
+.offcanvas .getStartedBtn {
     background-color: #4f96e8;
     color: white;
     border-radius: 12px;
@@ -101,11 +101,10 @@
     border: 2px solid white;
     text-decoration: none;
     /* margin-top: -1rem; */
-    
     height: 2.5rem;
   }
   
-  .getStartedBtn:hover {
+.offcanvas  .getStartedBtn:hover {
     background-color: white;
     color: #4f96e8;
     box-shadow: #fff;

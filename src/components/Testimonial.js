@@ -6,7 +6,7 @@ import Testimonials from "./Testimonials";
 import "./Testimonials.css";
 function Testimonial() {
   return (
-    <div class="row">
+    <div className="row">
       <div class="col-lg col1"><TestimonialLeft /></div>
       <div class="col-lg col2"><Testimonials /></div>
     </div>

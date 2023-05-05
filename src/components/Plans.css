@@ -1,10 +1,10 @@
 .plansDiv {
-    background-color: white;
+    background-color: transparent;
     margin: 5px;
     padding: 15px;
-    margin-bottom: 20rem;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
 }
-
 .plans-container {
     background-color: white;
     margin: 50px;
@@ -89,7 +89,7 @@
 .card {
     width: 370px;
     height: 40rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     border: none;
     border-radius: 0.5rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
@@ -287,11 +287,11 @@ li {
     }
 }
 @media screen and (max-width: 1500px){
-    .plansDivider {
+    .plansDiv {
         background-color: transparent;
         margin: 5px;
         padding: 15px;
-        margin-bottom: -10rem;
+
         margin-top: 10rem;
         height: 65rem;
     }  
@@ -322,11 +322,11 @@ li {
     }
 }
 @media screen and (max-width: 1200px){
-    .plansDivider {
+    .plansDiv {
         background-color: white;
         margin: 5px;
         padding: 15px;
-        margin-bottom: -6rem;
+        margin-bottom: 10rem;
         margin-top: 40rem;
         height: 140rem;
     }
@@ -400,7 +400,7 @@ li {
         font-weight: 2;
     }
     .card {
-        margin-left: 2.5rem;
+        margin-left: 1rem;
         width: 370px;
         height: 40rem;
         margin-bottom: 1rem;
@@ -486,11 +486,11 @@ li {
     }
 }
 @media (max-width: 992px) {
-    .plansDivider {
+    .plansDiv {
         background-color: transparent;
         margin: 5px;
         padding: 15px;
-        margin-bottom: -8rem;
+        margin-bottom: 10rem;
         margin-top: 33.5rem;
         height: 140rem;
     }
@@ -521,7 +521,7 @@ li {
     }
   }
   @media (max-width: 900px){
-    .plansDivider {
+    .plansDiv {
         background-color: transparent;
         margin-left: 5px;
         padding: 15px;
@@ -545,11 +545,11 @@ li {
   }
 
 @media (max-width: 800px){
-    .plansDivider {
+    .plansDiv {
         background-color: transparent;
         margin-left: 5px;
         padding: 15px;
-        margin-bottom: 20rem;
+        margin-bottom: 10rem;
         margin-top: 45.5rem;
         height: 140rem;
     }
@@ -568,7 +568,7 @@ li {
     }
   }
   @media (max-width: 700px){
-    .plansDivider {
+    .plansDiv {
         background-color: transparent;
         margin-left: 5px;
         padding: 15px;
@@ -591,7 +591,7 @@ li {
     }
   }
   @media (max-width: 650px){
-    .plansDivider {
+    .plansDiv {
         background-color: transparent;
         margin-left: 5px;
         padding: 15px;
@@ -613,7 +613,7 @@ li {
     }
   }
   @media (max-width: 600px){
-    .plansDivider {
+    .plansDiv {
         background-color: transparent;
         margin-left: 5px;
         padding: 15px;
@@ -636,7 +636,7 @@ li {
     }
   }
   @media (max-width: 500px) {
-    .plansDivider {
+    .plansDiv {
         background-color: transparent;
         margin: 5px;
         padding: 15px;

@@ -116,10 +116,10 @@
 }
 @media (max-width: 1200px){
   .contact-div{
-    height: 90rem;
-    background-color:white;
+    /* height: 90rem; */
+    /* background-color:yellow; */
     padding: 5rem;
-    margin-top: 8rem;
+    margin-top: 1rem;
     display: flex;
   }
   .contact-div-left{
@@ -152,7 +152,8 @@
     height: 90rem;
     background-color:transparent;
     padding: 5rem;
-    margin-top: -15.7rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
   }
@@ -241,6 +242,7 @@
     background-color: transparent;
     padding: 5rem;
     margin-top: -8.7rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
   }

@@ -1,5 +1,7 @@
 import React from "react";
 import "./TestimonialLeft.css";
+import { Link } from "react-router-dom";
+
 function TestimonialLeft() {
   return (
     <div className="row">
@@ -12,11 +14,11 @@ function TestimonialLeft() {
             <h1 className="testimonial-title">
               Clients Feedback About Their Experience With Us
             </h1>
-            {/* <Link to="/testimonials"> */}
-            <button className="btn px-4 py-2 mt-5 testimonialBtn">
-              See All Testimonials
-            </button>
-            {/* </Link> */}
+            <Link to="/testimonials" style={{ textDecoration: "none" }}>
+              <button className="btn px-4 py-2 mt-5 testimonialBtn">
+                See All Testimonials
+              </button>
+            </Link>
           </div>
         </div>
       </div>

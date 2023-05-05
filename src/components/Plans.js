@@ -51,7 +51,7 @@ function Plans() {
   };
 
   return (
-    <div className="plansDivider" id="plans">
+    <div className="plansDiv" id="plans">
       <div className="plans-container">
         <h6 className="lines"> Pricing Plans</h6>
         <h1 className="bordered-text">

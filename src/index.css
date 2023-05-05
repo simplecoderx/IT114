@@ -70,6 +70,14 @@ a {
 
 
 /* @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap'); */
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  margin: 0;
+}
+link{
+  text-decoration: none;
+}
+
 .sectionNavCar{
   margin-top: -1rem;
 }
