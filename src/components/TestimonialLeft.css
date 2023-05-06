@@ -1,10 +1,54 @@
+/* .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
+  color: black;
+} */
+.testimonialModal .carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+}
+
+.testimonialModal .carousel-item {
+  height: 400px;
+  background-color: pink;
+}
+
+
+.testimonialBox{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 10rem;
+}
+
+.testimonialModal .modal-dialog {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
+.testimonialModal .modal-content {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  /* background-color: rgba(141, 83, 83, 0.7); */
+  background-color:  #99c2f2;
+  color: #fff;
+}
+
+.testimonialModal .modal-body {
+  padding: 20px;
+  background-color:  #cfe5ff;
+}
+
 .colm1 {
   /* background-color: green; */
 }
 
-.testimonial-txt {
-  color: orange;
-  /* background-color: red; */
+.testimonial-text{
+  /* color: black; */
 }
 
 .testimonial-ctn {
@@ -142,6 +186,31 @@
   }
 }
 @media (max-width: 992px) {
+  .testimonialModal .modal-dialog {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+  }
+  
+  .testimonialModal .modal-content {
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    /* background-color: rgba(141, 83, 83, 0.7); */
+    background-color:  #99c2f2;
+    color: #fff;
+  }
+  
+  .testimonialModal .modal-body {
+    padding: 20px;
+    background-color:  #cfe5ff;
+  }
+  .testimonialBox{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+  }
   .testimonial-ctn {
     background-color: rgb(38, 57, 112);
     width: 90%;
@@ -274,6 +343,10 @@
 }
 
 @media (max-width: 500px) {
+  .testimonialModal .carousel-item {
+    height: 550px;
+    background-color: pink;
+  }
   .testimonial-ctn {
     background-color: rgb(38, 57, 112);
     width: 90%;

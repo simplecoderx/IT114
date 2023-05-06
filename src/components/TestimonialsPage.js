@@ -8,6 +8,7 @@ import customer3 from "./../assets/feedback/roga-acero.jpg";
 import customer4 from "./../assets/feedback/maria-sotis.jpg";
 import customer5 from "./../assets/feedback/micahel-wong.jpg";
 import customer6 from "./../assets/feedback/jeric-holman.jpg";
+import Divider from "./Divider";
 
 function TestimonialsPage() {
   return (
@@ -24,80 +25,9 @@ function TestimonialsPage() {
         </div>
       </div>
       <Container className="my-5" style={{ backgroundColor : "transparent" }}>
-        {/* <Row className='gx-4 gy-4'>
-        <Card className='col-md-4'>
-          <Card.Body>
-          <div className="row">
-            <div className="col-md-6">
-              <div className="testimonial-card">
-                <img
-                  className="testimonial-image"
-                  src={customer1}
-                  alt="Testimonial"
-                />
-                <span className="testimonial-names">Mary Raz</span>
-                <div className="star-ratings">
-                  <StarRating numStars={5} rating={4} />
-                </div>
-                <p
-                  style={{ textAlign: "justify" }}
-                  className="testimonial-text"
-                >
-                  "I recently hired HINLO Services to clean my office, and I
-                  must say I was impressed with their work. The cleaners arrived
-                  on time, very professional, meticulous and paid attention to
-                  detail, ensuring that every corner of the office was
-                  thoroughly cleaned. I highly recommended and will definitely
-                  be using their services again in the future."
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="testimonial-card">
-                <img
-                  className="testimonial-image"
-                  src={customer3}
-                  alt="Testimonial"
-                />
-                <span className="testimonial-names">Roga Acero</span>
-                <div className="star-ratings">
-                  <StarRating numStars={5} rating={5} />
-                </div>
-                <p className="testimonial-text">
-                  "I recently had them come to my home, and I must say, I'm
-                  extremely pleased with the results. Cleaners were very
-                  thorough, paid attention to the smallest details & took care
-                  of all the nooks and crannies and even managed to get rid of a
-                  stubborn stain. Professional and friendly team, and I felt
-                  comfortable having them in my home. I highly them and will definitely be using their services again."
-                </p>
-              </div>
-            </div>
-          </div>
-          </Card.Body>
-        </Card>
-        <Card className='col-md-4'>
-          <Card.Body>
-            <Card.Title>Jane Smith</Card.Title>
-            <Card.Text>
-              "Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat."
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='col-md-4'>
-          <Card.Body>
-            <Card.Title>Bob Johnson</Card.Title>
-            <Card.Text>
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur."
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </Row> */}
         <div className="row">
-          <div className="col-md-4">
-            <div className="testimonials-card">
+          <div >
+            <div >
               <img
                 className="testimonial-image"
                 src={customer1}
@@ -162,7 +92,7 @@ function TestimonialsPage() {
           </div>
         </div>
         <br />
-        <div className="row">
+        <div className="row secondcol" style={{ marginTop: '-5rem' }}>
           <div className="col-md-4">
             <div className="testimonials-card top-card">
               <img
@@ -229,6 +159,7 @@ function TestimonialsPage() {
           </div>
         </div>
       </Container>
+      <Divider/>
     </>
   );
 }
