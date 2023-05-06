@@ -21,28 +21,55 @@ import CloseIcon from '@mui/icons-material/Close';
 //   whiteSpace: 'pre-line'
 // };
 
+
 const style = {
     position: 'absolute',
-    top: '33%',
+    top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: '50%', // Use a percentage value for responsive sizing
-    // maxWidth: 500, // Use a maximum width for larger screens
     maxHeight: '80vh',
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
+    bgcolor: '#fff',
+    boxShadow: '0px 3px 15px rgba(0, 0, 0, 0.5)',
     p: 4,
-    whiteSpace: 'pre-line',
+    textAlign: 'justify',
+    borderRadius: '5px',
+    outline: 'none',
     overflow: 'auto',
-
-    '@media (max-width: 600px)': {
-        // Define styles for screens smaller than 600px wide
+    '&::-webkit-scrollbar': {
+        width: '0.5em',
+        height: '0.5em'
+      },
+      '&::-webkit-scrollbar-thumb': {
+        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+        borderRadius: '4px'
+      },
+    '@media (max-width: 1200px)': {
         width: '80%',
         top: '50%',
-
+        fontSize: '1px',
+      textAlign: 'justify',
+      margin: '4px',
+      },
+    '@media (max-width: 600px)': {
+      // Define styles for screens smaller than 600px wide
+      width: '80%',
+      top: '50%',
+      fontSize: '1px',
+    textAlign: 'justify',
+    margin: '4px',
+    // maxWidth:'70rem',
     },
-};
+    '@media (max-width: 500px)': {
+        // Define styles for screens smaller than 600px wide
+        width: '90%',
+        top: '50%',
+        fontSize: '12px',
+      textAlign: 'justify',
+      margin: '4px',
+      // maxWidth:'70rem',
+      },
+  };
 
 
 export default function ModalCard1() {

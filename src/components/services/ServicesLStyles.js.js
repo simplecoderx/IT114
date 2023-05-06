@@ -44,79 +44,202 @@ export const SLDiv = styled.div`
 // `
 
 export const ServicesHrLines = styled.div`
-background-color: transparent;
 position: relative;
 text-align: left;
-text-indent: 7rem;;
+margin-left: 7rem;
 color: orange;
 font-style: italic;
-// margin-bottom: 1rem;
-// margin-top: -6rem;
-&::before,
-&::after {
-  content: "";
+&::before {
+  content: " ";
+  display: block;
   height: 2px;
   width: 130px;
   position: absolute;
   top: 50%;
+  left: -155px;
   background: orange;
-}
-&::before {
-  left: -3rem;
 }
 
 &::after {
-  right: 1rem;
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0.0px;
 }
 @media (max-width: 1200px) {
-
+  // background-color: red;
+  position: relative;
+  text-align: left;
+  margin-left: -1.7rem;
+  color: orange;
+  font-style: italic;
+    &::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+}
+&::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+text-indent: 9.2rem;;
+}
 }
 @media (max-width: 992px) {
-  &::before {
-    left: -1rem;
-  }
-  &::after {
-    right: 25.5rem;
-  }
+  // background-color: gray;
+  position: relative;
+  text-align: left;
+  margin-left: -1.7rem;
+  color: orange;
+  font-style: italic;
+    &::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
   display: block;
-  text-indent: 9rem;;
+  position: absolute;
+  top: 50%;
+  left: 9px;
 }
+&::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 25rem;
+}
+text-indent: 10rem;;
 }
 @media (max-width: 800px) {
-  &::before {
-    left: -1rem;
-  }
-  &::after {
-    right: 20.5rem;
-  }
+  // background-color: yellow;
+  position: relative;
+  text-align: left;
+  margin-left: -1.7rem;
+  color: orange;
+  font-style: italic;
+    &::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
   display: block;
-  text-indent: 9rem;;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+}
+&::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 17rem;
+}
+text-indent: 10rem;;
 }
 @media (max-width: 700px) {
-  &::before {
-    left: 4rem;
-  }
-  &::after {
-    right: 6rem;
-  }
+  // background-color:green;
+  position: relative;
+  text-align: left;
+  margin-left: -1.7rem;
+  color: orange;
+  font-style: italic;
+    &::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
   display: block;
-  text-indent: 14rem;;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+}
+&::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 14rem;
+}
+text-indent: 10rem;;
+}
 }
 @media (max-width: 600px) {
-  &::before {
-    left: 2rem;
-  }
-  &::after {
-    right: 4rem;
-  }
-  text-indent: 12rem;;
+  // background-color: pink;
+  position: relative;
+  text-align: left;
+  margin-left: -5.7rem;
+  color: orange;
+  font-style: italic;
+    &::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+}
+&::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: orange;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 5.5rem;
+}
+text-indent: 16rem;
 }
 @media (max-width: 500px) {
-  &::before {
-    left: -1rem;
+    position: relative;
+    text-align: left;
+    margin-left: -1.7rem;
+    color: orange;
+    font-style: italic;
+      &::before {
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: orange;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 9px;
   }
   &::after {
-    right: 1rem;
+    content: " ";
+    height: 2px;
+    width: 130px;
+    background: orange;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 4rem;
   }
   text-indent: 10rem;;
 }
@@ -125,31 +248,31 @@ font-style: italic;
 export const SLTextDiv = styled.div`
 align-items: center;
 background-color: transparent;
-@media (max-width: 1200px) {
+// @media (max-width: 1200px) {
 
-}
-@media (max-width: 992px) {
-  margin-left: -1rem;
-}
-@media (max-width: 800px) {
-  margin-left: -1rem;
+// }
+// @media (max-width: 992px) {
+//   margin-left: -1rem;
+// }
+// @media (max-width: 800px) {
+//   margin-left: -1rem;
 
-}
-@media (max-width: 700px) {
-  margin-left: 1rem;
-}
-@media (max-width: 600px) {
-  margin-left: 1rem;
-}
-@media screen and (max-width: 600px) {
-  margin-left: 1rem;
-  // background-color: gray;
-  }
-@media (max-width: 500px) {
-  margin-left: -1rem;
-  margin-bottom: -2rem;
-  // background-color: blue;
-}
+// }
+// @media (max-width: 700px) {
+//   margin-left: 1rem;
+// }
+// @media (max-width: 600px) {
+//   margin-left: 1rem;
+// }
+// @media screen and (max-width: 600px) {
+//   margin-left: 1rem;
+//   // background-color: gray;
+//   }
+// @media (max-width: 500px) {
+//   margin-left: -1rem;
+//   margin-bottom: -2rem;
+//   // background-color: blue;
+// }
 `
 
 export const SLText = styled.p`
