@@ -18,7 +18,7 @@ margin-top: 15rem;
   // background-color: green;
 }
 @media (max-width: 800px) {
-  margin-top: 39rem;
+  margin-top: 50rem;
   // background-color: gray;
 }
 @media (max-width: 700px) {

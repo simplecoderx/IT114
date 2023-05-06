@@ -4,7 +4,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./components/Home";
-import TestimonialsPage from "./components/TestimonialsPage";
+//import TestimonialsPage from "./components/TestimonialsPage";
 import Navi from "./components/Navi";
 import GlobalStyle from './components/GlobalComponents';
 
@@ -28,10 +28,10 @@ const router = createBrowserRouter([
         path:"/",
         element:<Home/>
       },
-      {
-        path:"/testimonials",
-        element:<TestimonialsPage />
-      },
+      // {
+      //   path:"/testimonials",
+      //   element:<TestimonialsPage />
+      // },
     ]
   },
 ])
