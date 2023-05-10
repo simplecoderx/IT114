@@ -2,33 +2,33 @@ import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import { useForm } from "@formcarry/react";
+import { useForm } from "@formspree/react";
 import "./Contact.css";
 
 function FormContact() {
-  const { state, submit } = useForm({
-    id: "JqqxnckAco",
-  });
-  const [showModal, setShowModal] = useState(false);
+  // const { state, submit } = useForm({
+  //   id: "xlekvrpj",
+  // });
+  // const [showModal, setShowModal] = useState(false);
 
-  // Function to handle the modal close event
-  const handleClose = () => setShowModal(false);
+  // // Function to handle the modal close event
+  // const handleClose = () => setShowModal(false);
 
-  // Function to handle the form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!navigator.onLine) {
-      alert('You are currently offline. Please check your internet connection.');
-      return;
-    }
-    await submit(e);
-    setShowModal(true);
-    e.target.reset(); // Reset the form after submission
-  };
+  // // Function to handle the form submission
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   if (!navigator.onLine) {
+  //     alert('You are currently offline. Please check your internet connection.');
+  //     return;
+  //   }
+  //   await submit(e);
+  //   setShowModal(true);
+  //   e.target.reset(); // Reset the form after submission
+  // };
 
   return (
     <div>
-      <Form className="form-contact" onSubmit={handleSubmit}>
+      <Form className="form-contact"  action="https://formspree.io/f/xlekvrpj" method="POST">
         <div className="d-flex mb-3 nameEmailContainer">
           <Form.Group
             // style={{ width: "50%" }}
@@ -80,7 +80,7 @@ function FormContact() {
       </Form>
 
       {/* Modal component to display the success message */}
-      <Modal show={showModal} onHide={handleClose}>
+      {/* <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Success!</Modal.Title>
         </Modal.Header>
@@ -92,11 +92,8 @@ function FormContact() {
           <Button variant="secondary" onClick={handleClose} className="FormContactBtn">
             Close
           </Button>
-          {/* <button className="btn px-4 py-2 fs-5 mt-5 testimonialBtn">
-              See All Testimonials
-            </button> */}
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </div>
   );
 }

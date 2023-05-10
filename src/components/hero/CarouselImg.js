@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./CarouselImg.css";
-import image1 from "./../assets/carousel/pexels-karolina-grabowska-4239145.jpg";
-import image2 from "./../assets/carousel/woman-g20b629547_1920.jpg";
-import image3 from "./../assets/carousel/pexels-pixabay-48889.jpg";
+import image1 from "./../../assets/carousel/pexels-karolina-grabowska-4239145.jpg";
+import image2 from "./../../assets/carousel/woman-g20b629547_1920.jpg";
+import image3 from "./../../assets/carousel/pexels-pixabay-48889.jpg";
 
 const CarouselImg = () => {
   return (

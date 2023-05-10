@@ -1,13 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './Navigation.css';
-import logo from './images/logo-color-removebg.png'
-import { Link } from 'react-router-dom';
+import logo from './../images/logo-color-removebg.png'
 
 function Navi() {
   return (

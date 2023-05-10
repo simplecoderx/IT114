@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import "./Testimonial.css";
 import StarRating from "./StarRating";
-import customer1 from "./../assets/feedback/mary-raz.jpg";
-import customer2 from "./../assets/feedback/kevin-chen.jpg";
-import customer3 from "./../assets/feedback/roga-acero.jpg";
-import customer4 from "./../assets/feedback/maria-sotis.jpg";
+import customer1 from "./../../assets/feedback/mary-raz.jpg";
+import customer2 from "./../../assets/feedback/kevin-chen.jpg";
+import customer3 from "./../../assets/feedback/roga-acero.jpg";
+import customer4 from "./../../assets/feedback/maria-sotis.jpg";
 
 function Testimonials() {
   const [index, setIndex] = useState(0);

@@ -38,12 +38,12 @@ function PopupForm(props) {
     // Validate phone number before submitting
     const phoneRegex = /^\d{11}$/; // Regex for 10-digit phone number
     if (!phoneRegex.test(formData.phone)) {
-      setPhoneError("Please enter a valid 10-digit phone number");
+      setPhoneError("Please enter a valid 11-digit phone number");
       return;
     }
     setFormSubmitStatus({ submitting: true, error: false, success: false });
     try {
-      await axios.post("https://formcarry.com/s/JqqxnckAco", formData, {
+      await axios.post("https://formspree.io/f/xlekvrpj", formData, {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",

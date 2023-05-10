@@ -4,9 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Plans.css";
 import { Button } from "react-bootstrap";
-import cleaningcart from "./images/cleaning-cart.png";
-import cleaningservice from "./images/cleaning-service.png";
-import house from "./images/house.png";
+import cleaningcart from "./../images/cleaning-cart.png";
+import cleaningservice from "./../images/cleaning-service.png";
+import house from "./../images/house.png";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import axios from "axios";
@@ -37,7 +37,7 @@ function Plans() {
     event.preventDefault();
     setFormSubmitStatus({ submitting: true, error: false, success: false });
     try {
-      await axios.post("https://formcarry.com/s/JqqxnckAco", formData, {
+      await axios.post("https://formspree.io/f/xlekvrpj", formData, {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",

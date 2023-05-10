@@ -33,12 +33,12 @@ import React, { useState } from "react";
 import "./TestimonialLeft.css";
 import { Button, Modal, Carousel } from "react-bootstrap";
 import StarRating from "./StarRating";
-import customer1 from "./../assets/feedback/mary-raz.jpg";
-import customer2 from "./../assets/feedback/kevin-chen.jpg";
-import customer3 from "./../assets/feedback/roga-acero.jpg";
-import customer4 from "./../assets/feedback/maria-sotis.jpg";
-import customer5 from "./../assets/feedback/micahel-wong.jpg";
-import customer6 from "./../assets/feedback/jeric-holman.jpg";
+import customer1 from "./../../assets/feedback/mary-raz.jpg";
+import customer2 from "./../../assets/feedback/kevin-chen.jpg";
+import customer3 from "./../../assets/feedback/roga-acero.jpg";
+import customer4 from "./../../assets/feedback/maria-sotis.jpg";
+import customer5 from "./../../assets/feedback/micahel-wong.jpg";
+import customer6 from "./../../assets/feedback/jeric-holman.jpg";
 function TestimonialLeft() {
   const [show, setShow] = useState(false);
 
