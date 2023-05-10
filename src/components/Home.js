@@ -24,32 +24,37 @@
 
 // export default Home;
 
-import React from 'react'
-import Navi from './Navi'
-import CarouselImg from './CarouselImg'
-import Testimonial from './Testimonial'
-import Plans from './Plans'
-import Contact from './Contact'
-import AboutUs from './../components/aboutus/AboutUs';
-import FAQ from './../components/faq/FAQ';
-import Footer from './../components/footer/Footer';
-import Portfolio from './../components/portfolios/Portfolio';
-import Services from './../components/services/Services';
+import React from "react";
+import Navi from "./Navi";
+import CarouselImg from "./CarouselImg";
+import Testimonial from "./Testimonial";
+import Plans from "./Plans";
+import Contact from "./Contact";
+import AboutUs from "./../components/aboutus/AboutUs";
+import FAQ from "./../components/faq/FAQ";
+import Footer from "./../components/footer/Footer";
+import Portfolio from "./../components/portfolios/Portfolio";
+import Services from "./../components/services/Services";
 
 const Home = () => {
   return (
     <div>
-      <CarouselImg/>
-      <Services/>
-      <Portfolio/>
-      <Plans/>
-      <Testimonial/>
-      <FAQ/>
-      <AboutUs/>
-      <Contact/>
-      <Footer/>
+      <Navi />
+      <CarouselImg />
+      <Services />
+      <Portfolio />
+      <div id="plans">
+        <Plans />
+      </div>
+      <Testimonial />
+      <FAQ />
+      <AboutUs />
+      <div id="contact">
+        <Contact />
+      </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
