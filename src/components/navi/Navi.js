@@ -34,34 +34,10 @@ function Navi() {
                 <Nav.Link className='nav-item' href="#faq" spy={true} smooth={true} offset={-150} duration={500}>FAQ</Nav.Link>
                 <Nav.Link className='nav-item' href="#about" spy={true} smooth={true} offset={-150} duration={500}>ABOUT US</Nav.Link>
                 <Nav.Link className='nav-item' href="#contact" spy={true} smooth={true} offset={-150} duration={500}>CONTACT US</Nav.Link>
-                {/* <Link to="/getstarted" className="no-underline"> */}
                 <Button href="#plans" className="getStartedBtn no-underline" spy={true} smooth={true} offset={-150} duration={500}>
                   Get Started
                 </Button>
-              {/* </Link> */}
-                {/* <NavDropdown
-                  title="Dropdown"
-                  id={`offcanvasNavbarDropdown-expand-lg`}
-                >
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown> */}
               </Nav>
-              {/* <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form> */}
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

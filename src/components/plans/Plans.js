@@ -108,9 +108,6 @@ function Plans() {
               </Card.Text>
             </Card.Body>
             <Card.Footer>
-              {/* <Button className="planbutton" onClick={handleShow}>
-                Click Here
-              </Button> */}
               <PopupForm
                 className="planbutton"
                 planName="Starter"
@@ -160,14 +157,8 @@ function Plans() {
                   </ul>
                 </div>
               </Card.Text>
-              {/* <Button className="planbutton" variant="primary">
-                Click Here
-              </Button> */}
             </Card.Body>
             <Card.Footer>
-              {/* <Button className="planbutton" onClick={handleShow}>
-                Click Here
-              </Button> */}
               <PopupForm
                 className="planbutton"
                 planName="Pro"
